@@ -101,3 +101,8 @@ button:hover{
     background-color: var(--blue-medium);
     /* color: var(--white-ish) !important; */
 }
+
+
+a.school-title{
+    color: var(--gray-black);
+}
