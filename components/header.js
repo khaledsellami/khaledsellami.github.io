@@ -28,9 +28,9 @@ class Header extends HTMLElement {
             <li class="nav-item mr-2">
               <a class="nav-link" href="/pages/projects.html">Projects</a>
             </li> 
-            <li class="nav-item mr-2">
-              <a class="nav-link" href="/pages/skills.html">Skills</a>
-            </li>
+<!--            <li class="nav-item mr-2">-->
+<!--              <a class="nav-link" href="/pages/skills.html">Skills</a>-->
+<!--            </li>-->
 <!--            <li class="nav-item mr-2">-->
 <!--              <a class="nav-link" href="/pages/teaching.html">Teaching</a>-->
 <!--            </li>-->
