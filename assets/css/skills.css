@@ -28,3 +28,81 @@ a:hover {
 }
 
 /* body > div > ol:nth-child(7) > li > button > a */
+
+.skill-level-container {
+  margin: 2rem 0;
+}
+
+.skill-level-title {
+  color: var(--blue-medium);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--blue-light);
+  padding-bottom: 0.5rem;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.skill-item {
+  position: relative;
+  padding: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-level-indicator {
+  height: 6px;
+  margin-top: 8px;
+  border-radius: 3px;
+  border: 1px solid var(--blue-medium);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+  background: #ffffff;
+}
+
+.skill-level-indicator.expert {
+  background: linear-gradient(90deg, var(--blue-light) 100%,  #ffffff 0%);
+}
+
+.skill-level-indicator.advanced {
+  background: linear-gradient(90deg, var(--blue-light) 75%, #ffffff 75%);
+}
+
+.skill-level-indicator.working {
+  background: linear-gradient(90deg, var(--blue-light) 50%, #ffffff 50%);
+}
+
+.skill-level-indicator.beginner {
+  background: linear-gradient(90deg, var(--blue-light) 25%, #ffffff 25%);
+}
+
+.skill-item-with-text {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin: 5px;
+  height: 50px;
+}
+
+.skill-item-with-text .skill-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.skill-item-with-text .skill-name {
+  font-size: 16px;
+  font-weight: 1000;
+  color: #333;
+}
