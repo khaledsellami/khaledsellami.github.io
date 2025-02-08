@@ -65,6 +65,35 @@
             }
         }
     },
+    "publications": {
+        "pageTitle": "Publications",
+        "peerReviewed": "Peer-Reviewed Publications"
+    },
+    "skills": {
+        "pageTitle": "Skills",
+        "languages": {
+            "title": "Programming/Scripting Languages",
+            "expert": "Expert Proficiency",
+            "advanced": "Advanced Experience",
+            "working": "Working Knowledge",
+            "basic": "Basic Knowledge"
+        },
+        "frameworks": {
+            "title": "Frameworks",
+            "datascience": "Data Science & ML",
+            "visualization": "Visualization",
+            "web": "Web Frameworks"
+        },
+        "cloud": {
+            "title": "Cloud and MLOps"
+        },
+        "tools": {
+            "title": "Tools and Environments"
+        },
+        "databases": {
+            "title": "Databases"
+        }
+    },
     "footer": {
         "quickLinks": "Quick Links"
     }

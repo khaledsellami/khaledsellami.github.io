@@ -65,6 +65,35 @@
             }
         }
     },
+    "publications": {
+        "pageTitle": "Publications",
+        "peerReviewed": "Publications Évaluées par les Pairs"
+    },
+    "skills": {
+        "pageTitle": "Compétences",
+        "languages": {
+            "title": "Langages de Programmation/Scripting",
+            "expert": "Expert",
+            "advanced": "Avancé",
+            "working": "Intermédiaire",
+            "basic": "Débutant"
+        },
+        "frameworks": {
+            "title": "Frameworks",
+            "datascience": "Science des Données & ML",
+            "visualization": "Visualisation",
+            "web": "Frameworks Web"
+        },
+        "cloud": {
+            "title": "Cloud et MLOps"
+        },
+        "tools": {
+            "title": "Outils et Environnements"
+        },
+        "databases": {
+            "title": "Bases de Données"
+        }
+    },
     "footer": {
         "quickLinks": "Liens Rapides"
     }
