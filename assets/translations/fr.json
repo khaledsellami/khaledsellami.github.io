@@ -1,4 +1,27 @@
 {
+    "shared": {
+        "months": {
+            "january": "Janvier",
+            "february": "Février",
+            "march": "Mars",
+            "april": "Avril",
+            "may": "Mai",
+            "june": "Juin",
+            "july": "Juillet",
+            "august": "Août",
+            "september": "Septembre",
+            "october": "Octobre",
+            "november": "Novembre",
+            "december": "Décembre"
+        },
+        "present": "Présent",
+        "season": {
+            "spring": "Printemps",
+            "summer": "Été",
+            "autumn": "Automne",
+            "winter": "Hiver"
+        }
+    },
     "header": {
         "nav": {
             "home": "Accueil",
@@ -127,6 +150,64 @@
         },
         "databases": {
             "title": "Bases de Données"
+        }
+    },
+    "experience": {
+        "professionalTitle": "Expériences Professionnelles",
+        "internshipsTitle": "Stages",
+        "volunteeringTitle": "Bénévolat",
+        "readMore": "Lire plus",
+        "techUsed": "Technologies utilisées:",
+        "ensiTitle": "École Nationale des Sciences de l'Informatique (ENSI)",
+        "lecturer": {
+            "title": "Chargé de cours et Assistant d'enseignement",
+            "department": "Département d'Informatique et de Génie Logiciel",
+            "courses": {
+                "ift2001": "Systèmes d'exploitation pour ingénieurs",
+                "glo4008": "Applications infonuagiques natives et DevOps",
+                "glo2100": "Algorithmes et structures de données pour ingénieurs"
+            },
+            "descriptionLecturer": "En tant que chargé de cours, mes responsabilités incluaient la présentation de cours engageants et bien structurés, la conception et la création de travaux pratiques, ainsi que l'élaboration d'examens complets pour évaluer la compréhension des étudiants. J'ai également fourni des retours constructifs et contribué au développement du programme d'études.",
+            "descriptionTA": "Dans mon rôle d'assistant d'enseignement, j'ai dirigé des séances de laboratoire, guidé les étudiants dans leurs travaux pratiques et veillé à ce qu'ils assimilent efficacement les concepts clés. J'ai également contribué en corrigeant les examens et les devoirs, en fournissant des retours détaillés et en apportant mon soutien à l'enseignant."
+        },
+        "cognira": {
+            "title": "Data Scientist Junior",
+            "summary": "Prévision des séries temporelles du commerce de détail et visualisation des données.",
+            "tasks": "<li>Analyse hebdomadaire des données récentes.</li><li>Discussions des résultats avec le client.</li><li>Évaluation des performances des systèmes de prévision et optimisation de leurs paramètres.</li><li>Développement et amélioration des outils d’analyses.</li>"
+        },
+        "hq": {
+            "title": "Stagiaire en Science des Données",
+            "summary": "Prévision de séries temporelles pour les charges de travail mensuelles des spécialistes de HQ.",
+            "tasks": "<li>Dans ce stage, j'ai travaillé avec une équipe au sein de l'Institut de recherche d'Hydro-Québec (IREQ). Le projet sur lequel j'ai travaillé consistait à rechercher un modèle de prévision de séries temporelles pour la charge de travail des spécialistes d'Hydro-Québec à travers la province. Mes tâches comprenaient :</li> <ul> <li>Analyse des données historiques afin d'extraire des informations pertinentes et de les présenter à l'équipe.</li> <li>Refactorisation et amélioration de l'architecture du projet.</li> <li>Développement d'un modèle de prévision annuel distinct.</li> </ul>"
+        },
+        "vilmorin": {
+            "title": "Stagiaire en Recherche et Développement",
+            "summary": "Classification automatique des maladies des graines de tournesol à partir d'images Rayon-X.",
+            "tasks": "<li>Stage de fin d'études : Exécution du projet depuis le concept initial et la planification jusqu'à la conception, le développement, les tests et le déploiement final.</li> <li>Conception d'un modèle d'apprentissage profond capable de classer les défauts des graines de tournesol.</li> <li>Traitement et segmentation des images DICOM (radiographiques) contenant des lots d'échantillons de graines de tournesol.</li> <li>Développement d'une interface graphique (GUI) pour améliorer l'expérience utilisateur et la productivité.</li> <li>Intégration des modules de traitement d'image et de classification dans l'interface graphique.</li>"
+        },
+        "teamwill": {
+            "title": "Stagiaire en Génie Logiciel",
+            "summary": "Développement de microservices automatisés pour la prévision et l'analyse de bases de données.",
+            "tasks": "<li>Développement d'un microservice permettant d'exporter et de modéliser des bases de données relationnelles en bases de données graphes.</li> <li>Création d'un microservice prototype permettant la prévision automatique ou le regroupement par clustering.</li>"
+        },
+        "logidas": {
+            "title": "Stagiaire en Génie Logiciel",
+            "summary": "Développement d'un outil d'analyse, de parsing et d'exportation des bases de données Paradox.",
+            "description": "Développement d'un outil d'analyse, de parsing et d'exportation des bases de données Paradox. L'outil a été intégré au produit ERP de l'entreprise."
+        },
+        "eje": {
+            "title": "Chef de Projet",
+            "name": "ENSI Junior Entreprise",
+            "tasks": "<li>Dirigé le développement de projets internes (comme notre site web) impliquant la collaboration de plusieurs étudiants.</li> <li>Joué un rôle actif dans l'organisation d'événements et la gestion de la logistique des partenaires.</li>"
+        },
+        "gdg": {
+            "title": "Membre du Conseil Exécutif",
+            "tasks": "Organization des branches locales pour les compétitions de codes."
+        },
+        "yfs": {
+            "title": "Enseignement de collégiens",
+            "name": "Atelier de Mathématiques Appliquées",
+            "tasks": "Ensenseignement des mathématiques appliquées pour les collégiens lors d'événements."
         }
     },
     "footer": {

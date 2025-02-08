@@ -1,4 +1,27 @@
 {
+    "shared": {
+        "months": {
+            "january": "January",
+            "february": "February",
+            "march": "March",
+            "april": "April",
+            "may": "May",
+            "june": "June",
+            "july": "July",
+            "august": "August",
+            "september": "September",
+            "october": "October",
+            "november": "November",
+            "december": "December"
+        },
+        "present": "Present",
+        "season": {
+            "spring": "Spring",
+            "summer": "Summer",
+            "autumn": "Autumn",
+            "winter": "Winter"
+        }
+    },
     "header": {
         "nav": {
             "home": "Home",
@@ -127,6 +150,64 @@
         },
         "databases": {
             "title": "Databases"
+        }
+    },
+    "experience": {
+        "professionalTitle": "Professional Experiences",
+        "internshipsTitle": "Internships",
+        "volunteeringTitle": "Volunteering Experiences",
+        "readMore": "Read more",
+        "techUsed": "Technologies used:",
+        "ensiTitle": "National School of Computer Sciences (ENSI)",
+        "lecturer": {
+            "title": "Lecturer and Teaching Assistant",
+            "department": "Department of Computer Science and Software Engineering",
+            "courses": {
+                "ift2001": "Operating Systems for Engineers",
+                "glo4008": "Cloud Native Applications and DevOps",
+                "glo2100": "Algorithms and Data Structures for Engineers"
+            },
+            "descriptionLecturer": "As a lecturer, my responsibilities involved delivering engaging and well-structured\n                                        lectures, designing and creating practical work assignments, and developing comprehensive\n                                        exams to assess student understanding. I also provided constructive feedback\n                                        and contributed to curriculum development.",
+            "descriptionTA": "In my role as a teaching assistant, I led laboratory sessions, guided students\n                                        through practical work, and ensured they grasped key concepts effectively.\n                                        I also contributed by correcting exams and assignments, offering detailed feedback,\n                                        and supporting the lecturer."
+        },
+        "cognira": {
+            "title": "Junior Data Scientist",
+            "summary": "Retail time series forecasting analysis and data visualization.",
+            "tasks": "<li>Weekly discussions with the client about the forecasting results and the impacted sales. </li><li>Evaluating the performance of the forecasting systems and optimizing their hyper-parameters. </li><li>Daily analysis of the recent sales and forecasting data. </li><li>Developing and improving the internal analysis tools. </li>"
+        },
+        "hq": {
+            "title": "Data Science Research Intern",
+            "summary": "Time Series Forecasting for monthly HQ specialist workloads.",
+            "tasks": "<li>In this internship, I worked with a team within the Hydro-Quebec Research Institute (IREQ).\n                                        The project I worked on involved researching a time series forecasting model for the workload\n                                        done by HQ specialists across Quebec. My tasks involved:</li>\n                                    <ul>\n                                        <li>Analyzing the historical data in order to extract meaningful insights and present them to the team.</li>\n                                        <li>Refactoring and improving the architecture of the project.</li>\n                                        <li>Building a separate yearly forecasting model.</li>\n                                    </ul>"
+        },
+        "vilmorin": {
+            "title": "Research and Development Intern",
+            "summary": "Automatic classification of sunflower seeds diseases based on X-ray images.",
+            "tasks": "<li>End of Study Internship: Executing the project from initial concept and planning to design, development, testing, and final deployment.</li><li>Designing a Deep Learning model that can classify the defects in sunflower seeds.</li><li>Processing and segmentation of DICOM images (X-ray) that includes batches of sunflower seed samples.</li><li>Building a GUI for improving the user experience and productivity.</li><li>Integrating the image processing and classification module into the GUI.</li>"
+        },
+        "teamwill": {
+            "title": "Software Engineering Intern",
+            "summary": "Building automated forecasting and database analysis microservices.",
+            "tasks": "<li>Developing a microservice that exports and models relational databases into graph databases. </li><li>Building a prototype microservice that enables automatic forecasting or clustering. </li>"
+        },
+        "logidas": {
+            "title": "Software Engineering Intern",
+            "summary": "Developing a tool for analyzing, parsing and exporting Paradox databases.",
+            "description": "Developing a tool for analyzing, parsing and exporting Paradox databases. The tool was integrated into the company's ERP product."
+        },
+        "eje": {
+            "title": "Project Lead",
+            "name": "ENSI Junior Enterprise",
+            "tasks": "<li>Led the development of internal projects (such as our website) that involved the collaboration of multiple students. </li><li>Played an active role organizing events and handling partner logistics. </li>"
+        },
+        "gdg": {
+            "title": "Executive Board member",
+            "tasks": "Organizing local branches for Coding Competitions."
+        },
+        "yfs": {
+            "title": "Instructor for middle-schoolers",
+            "name": "Applied Mathematics Workshop",
+            "tasks": "Teaching applied mathematics for middle-schoolers in events."
         }
     },
     "footer": {
