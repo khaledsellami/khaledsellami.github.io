@@ -65,6 +65,41 @@
             }
         }
     },
+    "projects": {
+        "pageTitle": "Projets",
+        "affiliation": "Affiliation:",
+        "references": "Références:",
+        "microanalyzer": {
+            "dates": "(Juin 2024)",
+            "description": "Une collection d'outils d'analyse statique pour divers langages de programmation (Java, C#, Python, JavaScript, Ruby, Go). Dans le cadre d'un article de recherche plus vaste, ce projet implémente un ensemble de parseurs permettant d'extraire des extraits de code dans des applications basées sur des microservices pour plusieurs langages de programmation."
+        },
+        "rldec": {
+            "dates": "(Mai 2023)",
+            "description1": "Ce projet est une implémentation de l'approche de décomposition RLDec décrite dans l'article",
+            "description2": "RLDec est un outil de décomposition qui analyse le code source d'une application Java monolithique et suggère les microservices recommandés pour chaque classe du système en utilisant une méthode basée sur l'apprentissage par renforcement profond. L'approche a été principalement implémentée avec PyTorch et Ray-RLlib, une bibliothèque d'apprentissage par renforcement offrant une API de haut niveau pour l'apprentissage par renforcement distribué."
+        },
+        "hydec": {
+            "dates": "(Décembre 2022)",
+            "description1": "Ce projet est une implémentation des approches de décomposition HyDec et HierDec décrites dans les articles:",
+            "description2": "HierDec est un outil de décomposition qui analyse le code source d'une application Java monolithique à l'aide d'une analyse statique et d'un pipeline basé sur TF-IDF. Il recommande les microservices appropriés pour chaque classe du système en utilisant une version hiérarchique de l'algorithme DBSCAN.\n\nHyDec est une extension de l'approche HierDec qui combine les résultats de l'analyse statique avec ceux de l'analyse dynamique afin d'améliorer la qualité de la décomposition.\n\nL'implémentation actuelle est une généralisation de l'approche proposée dans HyDec, permettant l'utilisation de diverses représentations du code source (avec ou en remplacement des résultats des analyses statique et dynamique). Elle inclut les configurations par défaut correspondant aux approches décrites dans les articles de HyDec et HierDec."
+        },
+        "msextractor": {
+            "dates": "(Janvier 2022)",
+            "description1": "Ce projet est une implémentation de l'approche de décomposition MSExtractor décrite dans l'article",
+            "description2": "MSExtractor est un outil de décomposition qui analyse le code source d'une application Java monolithique et suggère les microservices recommandés pour chaque classe du système en utilisant l'algorithme évolutionnaire IBEA (Indicator-Based Evolutionary Algorithm)."
+        },
+        "sunflower": {
+            "title": "Classification automatique de graines de tournesol basée sur des images Rayons-X",
+            "dates": "(Mars 2020 - Août 2020)",
+            "description": "Ce projet a été réalisé dans le cadre de mon stage de fin d'études chez Vilmorin Mikado. L'objectif était de développer un modèle d'apprentissage automatique capable de classer les graines de tournesol à partir d'images radiographiques. Le projet s'est articulé autour de trois principales parties :",
+            "parts": "<li>Développement d'un module de segmentation pour extraire les graines des images radiographiques en utilisant des techniques classiques de traitement d'image</li> <li>Construction du module de classification, incluant la recherche du meilleur modèle à utiliser, le prétraitement des données et l'entraînement du modèle de réseau de neurones convolutionnel (CNN) sur les images au format DICOM</li> <li>Développement d'une interface conviviale permettant aux utilisateurs de téléverser les images, les examiner, les modifier, obtenir les résultats de classification et affiner les résultats générés</li>"
+        },
+        "foodies": {
+            "school": "École Nationale des Sciences de l'Informatique (ENSI)",
+            "dates": "(Janvier 2019 - Avril 2019)",
+            "description": "Ce projet a été réalisé dans le cadre de mes études pour le cours « Design and Development », où nous devions développer un logiciel de l'idée initiale jusqu'au déploiement. Ce projet est un système de recommandation de recettes de cuisine tunisienne basé sur les ingrédients. L'application utilise des techniques de Data Mining pour traiter les ingrédients, des techniques d'apprentissage automatique pour construire le moteur de recommandation, ainsi qu'une application web Django pour héberger le système."
+        }
+    },
     "publications": {
         "pageTitle": "Publications",
         "peerReviewed": "Publications Évaluées par les Pairs"

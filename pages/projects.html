@@ -29,7 +29,7 @@
     <div id="page-container">
         <header-component></header-component>
         <div class="container mt-4">
-            <h5><b>__ Projects _____________________</b></h5>
+            <h5><b>__ <span data-i18n="projects.pageTitle">Projects</span> _____________________</b></h5>
 
             <!-- project microAnalyzer -->
             <div class="mt-3 card">
@@ -42,8 +42,11 @@
 <!--                        </div>-->
                         <div class="col-md-10">
                             <h4 class="card-title mb-0">MicroAnalyzer</h4>
-                            <h6 class="small-lemos mt-1"><span class="span-lemos pr-2"><b>Affiliation:</b> Université Laval </span> (June 2024)</h6>
-                            <p class="card-text mt-2 mb-2 text-justify small">
+                            <h6 class="small-lemos mt-1"><span class="span-lemos pr-2">
+                                <b data-i18n="projects.affiliation">Affiliation:</b>
+                                Université Laval </span> 
+                                <span data-i18n="projects.microanalyzer.dates">(June 2024)</span></h6>
+                            <p class="card-text mt-2 mb-2 text-justify small" data-i18n="projects.microanalyzer.description">
                                 A collection of static analysis tools in various programming languages (Java, C#, Python, JavaScript, Ruby,
                                 Go). As part of a larger research paper, this project implements a set of parsers that extract code snippets in microservices based
                                 applications for multiple programming languages.
@@ -64,7 +67,7 @@
 
 
                             <div class="mt-2">
-                                <p class="pt-2 my-auto"><b>References :</b> <button type="button"
+                                <p class="pt-2 my-auto"><b data-i18n="projects.references">References :</b> <button type="button"
                                         class="ml-2 btn btn-blue btn-sm py-0"><a href="https://github.com/khaledsellami/micro-analysis-decomp" target="_blank">GitHub <i
                                                 class="ml-1 fa-brands fa-github"></i></a> </button>
                                 </p>
@@ -86,11 +89,15 @@
                         <!--                        </div>-->
                         <div class="col-md-10">
                             <h4 class="card-title mb-0">RLDec</h4>
-                            <h6 class="small-lemos mt-1"><span class="span-lemos pr-2"><b>Affiliation:</b> Université Laval </span> (May 2023)</h6>
+                            <h6 class="small-lemos mt-1"><span class="span-lemos pr-2">
+                                <b data-i18n="projects.affiliation">Affiliation:</b> 
+                                Université Laval </span> 
+                                <span data-i18n="projects.rldec.dates">(May 2023)</span></h6>
                             <p class="card-text mt-2 mb-2 text-justify small">
-                                This project is an implementation of the RLDec decomposition approach as described in the paper <a target="_blank" href="https://doi.org/10.1007/s10664-024-10547-4"> "Extracting Microservices from Monolithic Systems using Deep Reinforcement Learning" </a>.
+                                <span data-i18n="projects.rldec.description1">This project is an implementation of the RLDec decomposition approach as described in the paper </span> 
+                                <a target="_blank" href="https://doi.org/10.1007/s10664-024-10547-4"> "Extracting Microservices from Monolithic Systems using Deep Reinforcement Learning" </a>.
                                 <br>
-                                RLDec is a decomposition tool that analyzes the source code of a monolithic Java application and suggests the recommended microservices for each class in the system using a Deep Reinforcement Learning based method. The approach was implemented mainly Using PyTorch and Ray-RLlib, a reinforcement learning library that provides a high-level API for distributed reinforcement learning.
+                                <span data-i18n="projects.rldec.description2">RLDec is a decomposition tool that analyzes the source code of a monolithic Java application and suggests the recommended microservices for each class in the system using a Deep Reinforcement Learning based method. The approach was implemented mainly Using PyTorch and Ray-RLlib, a reinforcement learning library that provides a high-level API for distributed reinforcement learning.</span> 
                             </p>
 
                             <div>
@@ -104,7 +111,7 @@
 
 
                             <div class="mt-2">
-                                <p class="pt-2 my-auto"><b>References :</b> <button type="button"
+                                <p class="pt-2 my-auto"><b data-i18n="projects.references">References:</b> <button type="button"
                                                                                     class="ml-2 btn btn-blue btn-sm py-0"><a href="https://github.com/khaledsellami/decomp-rldec" target="_blank">GitHub <i
                                         class="ml-1 fa-brands fa-github"></i></a> </button>
                                 </p>
@@ -126,16 +133,16 @@
                         <!--                        </div>-->
                         <div class="col-md-10">
                             <h4 class="card-title mb-0">HyDec</h4>
-                            <h6 class="small-lemos mt-1"><span class="span-lemos pr-2"><b>Affiliation:</b> Université Laval </span> (December 2022)</h6>
+                            <h6 class="small-lemos mt-1"><span class="span-lemos pr-2"><b data-i18n="projects.affiliation">Affiliation:</b> Université Laval </span> 
+                                <span data-i18n="projects.hydec.dates">(December 2022)</span></h6>
                             <p class="card-text mt-2 mb-2 text-justify small">
-                                This project is an implementation of the HyDec and HierDec decomposition approaches as described in the papers:
+                                <span data-i18n="projects.hydec.description1">This project is an implementation of the HyDec and HierDec decomposition approaches as described in the papers:</span>
                                 <ul>
                                     <li><a href="https://doi.org/10.1007/978-3-031-20984-0_14" target="_blank"> HyDec: "Combining Static and Dynamic Analysis to Decompose Monolithic Application into Microservices"</a></li>
                                     <li><a href="https://doi.org/10.1145/3530019.3530040" target="_blank"> HierDec: "A Hierarchical DBSCAN Method for Extracting Microservices from Monolithic Applications"</a></li>
                                 </ul>
                             </p>
-                            <p class="card-text mt-2 mb-2 text-justify small">
-
+                            <p class="card-text mt-2 mb-2 text-justify small" data-i18n="projects.hydec.description2">
 
                                 HierDec is a decomposition tool that analyzes the source code of a monolithic Java application through static analysis and a TFIDF based pipeline and suggests the recommended microservices for each class in the system using a hierarchical version of the DBSCAN algorithm.
 
@@ -155,7 +162,7 @@
 
 
                             <div class="mt-2">
-                                <p class="pt-2 my-auto"><b>References :</b> <button type="button"
+                                <p class="pt-2 my-auto"><b data-i18n="projects.references">References:</b> <button type="button"
                                                                                     class="ml-2 btn btn-blue btn-sm py-0"><a href="https://github.com/khaledsellami/decomp-hydec" target="_blank">GitHub <i
                                         class="ml-1 fa-brands fa-github"></i></a> </button>
                                 </p>
@@ -177,11 +184,14 @@
                         <!--                        </div>-->
                         <div class="col-md-10">
                             <h4 class="card-title mb-0">MSExtractor</h4>
-                            <h6 class="small-lemos mt-1"><span class="span-lemos pr-2"><b>Affiliation:</b> Université Laval </span> (January 2022)</h6>
+                            <h6 class="small-lemos mt-1"><span class="span-lemos pr-2"><b data-i18n="projects.affiliation">Affiliation:</b> Université Laval </span> 
+                                <span data-i18n="projects.msextractor.dates">(January 2022)</span></h6>
                             <p class="card-text mt-2 mb-2 text-justify small">
-                                This project is an implementation of the MSExtractor decomposition approach as described in the paper <a href="https://doi.org/10.1016/j.infsof.2022.106996" target="_blank"> HyDec: "Improving microservices extraction using evolutionary search"</a>.
+                                <span data-i18n="projects.msextractor.description1">This project is an implementation of the MSExtractor decomposition approach as described in the paper </span>
+                                <a href="https://doi.org/10.1016/j.infsof.2022.106996" target="_blank"> 
+                                    MSExtractor: "Improving microservices extraction using evolutionary search"</a>.
                                 <br>
-                                MSExtractor is a decomposition tool that analyzes the source code of a monolithic Java application and suggests the recommended microservices for each class in the system using the evolutionary algorithm IBEA (Indicator-Based Evolutionary Algorithm).
+                                <span data-i18n="projects.msextractor.description2">MSExtractor is a decomposition tool that analyzes the source code of a monolithic Java application and suggests the recommended microservices for each class in the system using the evolutionary algorithm IBEA (Indicator-Based Evolutionary Algorithm).</span>
                             </p>
 
                             <div>
@@ -195,7 +205,7 @@
 
 
                             <div class="mt-2">
-                                <p class="pt-2 my-auto"><b>References :</b> <button type="button"
+                                <p class="pt-2 my-auto"><b data-i18n="projects.references">References:</b> <button type="button"
                                                                                     class="ml-2 btn btn-blue btn-sm py-0"><a href="https://github.com/khaledsellami/MSExtractor" target="_blank">GitHub <i
                                         class="ml-1 fa-brands fa-github"></i></a> </button>
                                 </p>
@@ -216,18 +226,20 @@
 
                         <!--                        </div>-->
                         <div class="col-md-10">
-                            <h4 class="card-title mb-0">Automatic classification of sunflower seeds based on X-ray images</h4>
-                            <h6 class="small-lemos mt-1"><span class="span-lemos pr-2"><b>Affiliation:</b> Vilmorin Mikado </span> (March 2020 - August 2020)</h6>
-                            <p class="card-text mt-2 mb-2 text-justify small">
+                            <h4 class="card-title mb-0" data-i18n="projects.sunflower.title">Automatic classification of sunflower seeds based on X-ray images</h4>
+                            <h6 class="small-lemos mt-1"><span class="span-lemos pr-2"><b data-i18n="projects.affiliation">Affiliation:</b> Vilmorin Mikado </span> 
+                                <span data-i18n="projects.sunflower.dates">(March 2020 - August 2020)</span></h6>
+                            <p class="card-text mt-2 mb-2 text-justify small" data-i18n="projects.sunflower.description">
                                 This project was done as part of my end of studies internship at Vilmorin Mikado.
                                 The goal was to develop a machine learning model that can classify sunflower seeds based on X-ray images.
-                                The project involved 3 main parts:
-                                <ul>
+                                The project involved 3 main parts: 
+                            </p>
+                                <ul data-i18n="projects.sunflower.parts" class="card-text mt-2 mb-2 text-justify small">
                                     <li>Developing a segmentation module to extract the seeds from the X-ray images using traditional image processing techniques</li>
                                     <li>Building the classification module which included researching the best model to use, data preprocessing, and fine-tuning the Convolutional Neural Network (CNN) model on the DICOM image data</li>
                                     <li>Developing a user-friendly interface to allow the users to upload the images, review them, edit them, get the classification results and fine-tune the generated results</li>
                                 </ul>
-                            </p>
+<!--                            </p>-->
 
                             <div>
                                 <span class="badge p-1 my-5 mr-1 sw-tools text-center my-auto">Python</span>
@@ -244,7 +256,7 @@
 
 
 <!--                            <div class="mt-2">-->
-<!--                                <p class="pt-2 my-auto"><b>References :</b> <button type="button"-->
+<!--                                <p class="pt-2 my-auto"><b data-i18n="projects.references">References:</b> <button type="button"-->
 <!--                                                                                    class="ml-2 btn btn-blue btn-sm py-0"><a href="https://github.com/khaledsellami/MSExtractor" target="_blank">GitHub <i-->
 <!--                                        class="ml-1 fa-brands fa-github"></i></a> </button>-->
 <!--                                </p>-->
@@ -266,8 +278,11 @@
 <!--                        </div>-->
                         <div class="col-md-10">
                             <h4 class="card-title mb-0">Foodies</h4>
-                            <h6 class="small-lemos mt-1"><span class="span-lemos pr-2"><b>Affiliation:</b> National School of Computer Sciences (ENSI) </span> (January 2019 - April 2019)</h6>
-                            <p class="card-text mt-2 mb-2 text-justify small">
+                            <h6 class="small-lemos mt-1"><span class="span-lemos pr-2"><b data-i18n="projects.affiliation">Affiliation:</b> 
+                                <span data-i18n="projects.foodies.school"> National School of Computer Sciences (ENSI) </span>
+                                </span> 
+                                <span data-i18n="projects.foodies.dates">(January 2019 - April 2019)</span></h6>
+                            <p class="card-text mt-2 mb-2 text-justify small" data-i18n="projects.foodies.description">
                                 This project was done as part of my studies for the course "Design and Development" where we had to develop a software from inception to deployment.
                                 This project is recipe recommendation system for Tunisian cuisine using ingredient data. The application utilizes data mining techniques to process the ingredients and machine learning techniques to build the recommender and a Django webapp to host the system.
 
@@ -283,7 +298,7 @@
 
 
                             <!--                            <div class="mt-2">-->
-                            <!--                                <p class="pt-2 my-auto"><b>References :</b> <button type="button"-->
+                            <!--                                <p class="pt-2 my-auto"><b data-i18n="projects.references">References:</b> <button type="button"-->
                             <!--                                                                                    class="ml-2 btn btn-blue btn-sm py-0"><a href="https://github.com/khaledsellami/MSExtractor" target="_blank">GitHub <i-->
                             <!--                                        class="ml-1 fa-brands fa-github"></i></a> </button>-->
                             <!--                                </p>-->
@@ -313,6 +328,12 @@
     <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <script src="/assets/js/main.js"></script>
+    <script type="module">
+        import LanguageManager from '/components/languageManager.js';
+
+        // Initialize the language manager
+        await window.languageManager.initialize();
+    </script>
     <script src="/components/header.js" type="text/javascript" defer></script>
     <script src="/components/footer.js" type="text/javascript"></script>
 <!--    <script src="/components/footer-lemos.js" type="text/javascript"></script>-->

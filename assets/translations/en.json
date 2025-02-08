@@ -65,6 +65,41 @@
             }
         }
     },
+    "projects": {
+        "pageTitle": "Projects",
+        "affiliation": "Affiliation:",
+        "references": "References:",
+        "microanalyzer": {
+            "dates": "(June 2024)",
+            "description": "A collection of static analysis tools in various programming languages (Java, C#, Python, JavaScript, Ruby, Go). As part of a larger research paper, this project implements a set of parsers that extract code snippets in microservices based applications for multiple programming languages."
+        },
+        "rldec": {
+            "dates": "(May 2023)",
+            "description1": "This project is an implementation of the RLDec decomposition approach as described in the paper",
+            "description2": "RLDec is a decomposition tool that analyzes the source code of a monolithic Java application and suggests the recommended microservices for each class in the system using a Deep Reinforcement Learning based method. The approach was implemented mainly Using PyTorch and Ray-RLlib, a reinforcement learning library that provides a high-level API for distributed reinforcement learning."
+        },
+        "hydec": {
+            "dates": "(December 2022)",
+            "description1": "This project is an implementation of the HyDec and HierDec decomposition approaches as described in the papers:",
+            "description2": "HierDec is a decomposition tool that analyzes the source code of a monolithic Java application through static analysis and a TFIDF based pipeline and suggests the recommended microservices for each class in the system using a hierarchical version of the DBSCAN algorithm.\n\nHyDec is an extension of the HierDec approach that combines the static analysis results with the dynamic analysis results to improve the quality of the decomposition.\n\nThe current implementation is a generalization of the approach proposed in HyDec enabling the use of various representations of the source code (with or instead of the static and dynamic analysis results). It includes the default configurations which correspond to the HyDec and HierDec papers."
+        },
+        "msextractor": {
+            "dates": "(January 2022)",
+            "description1": "This project is an implementation of the MSExtractor decomposition approach as described in the paper",
+            "description2": "MSExtractor is a decomposition tool that analyzes the source code of a monolithic Java application and suggests the recommended microservices for each class in the system using the evolutionary algorithm IBEA (Indicator-Based Evolutionary Algorithm)."
+        },
+        "sunflower": {
+            "title": "Automatic classification of sunflower seeds based on X-ray images",
+            "dates": "(March 2020 - August 2020)",
+            "description": "This project was done as part of my end of studies internship at Vilmorin Mikado. The goal was to develop a machine learning model that can classify sunflower seeds based on X-ray images. The project involved 3 main parts:",
+            "parts": "<li>Developing a segmentation module to extract the seeds from the X-ray images using traditional image processing techniques</li><li>Building the classification module which included researching the best model to use, data preprocessing, and fine-tuning the Convolutional Neural Network (CNN) model on the DICOM image data</li><li>Developing a user-friendly interface to allow the users to upload the images, review them, edit them, get the classification results and fine-tune the generated results</li>"
+        },
+        "foodies": {
+            "school": "National School of Computer Science (ENSI)",
+            "dates": "(January 2019 - April 2019)",
+            "description": "This project was done as part of my studies for the course \"Design and Development\" where we had to develop a software from inception to deployment. This project is recipe recommendation system for Tunisian cuisine using ingredient data. The application utilizes data mining techniques to process the ingredients and machine learning techniques to build the recommender and a Django webapp to host the system."
+        }
+    },
     "publications": {
         "pageTitle": "Publications",
         "peerReviewed": "Peer-Reviewed Publications"
