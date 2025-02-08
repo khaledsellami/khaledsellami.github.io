@@ -1,0 +1,29 @@
+{
+    "header": {
+        "nav": {
+            "home": "Accueil",
+            "education": "Études",
+            "experience": "Expérience",
+            "publications": "Publications",
+            "projects": "Projets",
+            "skills": "Compétences"
+        }
+    },
+    "index": {
+        "title": "Doctorant en informatique à l'Université Laval",
+        "location": "Québec, QC, Canada",
+        "website": "Site Web",
+        "aboutTitle": "À propos",
+        "aboutText": "Je suis doctorant en informatique à Université Laval (Canada), spécialisé dans l'architecture logicielle basée sur l'intelligence artificielle et les systèmes distribués. Mes recherches portent sur le développement d'approches intelligentes pour la décomposition automatisée en microservices, ayant abouti à quatre publications évaluées par des pairs dans des revues prestigieuses, notamment EMSE et IST. J'ai précédemment obtenu une maîtrise en Systèmes Intelligents de École Nationale des Sciences de l’Informatique (Tunisie), avec une spécialisation en apprentissage profond. Parfaitement bilingue français-anglais, je combine une expertise théorique en apprentissage automatique avec une solide expérience pratique en technologies cloud-native (Kubernetes, Docker), en conception de systèmes distribués et en frameworks d'apprentissage automatique (PyTorch, Transformers).",
+        "researchTitle": "Recherche",
+        "researchText": "Bien que l'architecture en microservices ait prouvé son efficacité pour les applications à grande échelle grâce à sa modularité et sa compatibilité cloud, la migration d'un système monolithique établi vers une architecture en microservices reste un processus coûteux et complexe. L'étape critique de décomposition, qui consiste à partitionner les composants du monolithe en microservices cibles, a été identifiée comme l'obstacle principal.\n<br>Ma thèse se concentre sur l'étude des approches automatisées de décomposition et de refactoring dans le but de moderniser le processus de migration et de modernisation des architectures logicielles. J'introduis des approches basées sur l'IA, allant des algorithmes évolutionnaires à l'apprentissage par représentation basé sur les LLM, pour améliorer l'efficacité des approches de décomposition et fournir de meilleures recommandations de microservices. De plus, cette thèse présente une approche permettant de refactoriser automatiquement les interactions monolithiques en RPC en utilisant une combinaison de modèles d'IA générative et de méthodes de méta-modélisation.",
+        "researchInterestsTitle": "Intérêts de recherche:",
+        "researchInterests": "Intelligence Artificielle, Apprentissage Automatique, Apprentissage Profond, Microservices, Refactoring de Code, Cloud",
+        "newsTitle": "Actualités",
+        "resumeTitle": "CV",
+        "resumePath": "/assets/pdfs/khaled_sellami_cv.pdf"
+    },
+    "footer": {
+        "quickLinks": "Liens Rapides"
+    }
+}

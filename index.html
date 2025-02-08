@@ -69,7 +69,7 @@
                                 style="color: var(--blue-medium);font-family: 'Ubuntu Sans', sans-serif; font-size: 1.75rm; max-width: 100%">
                                 Khaled Sellami</h4>
                             <!-- <h6 class="text-center mb-2" style="font-size: 0.85rm"><small>rochana@cs.odu.edu</small></h6> -->
-                            <p class="text-center mb-4">A PhD student at Université Laval</p>
+                            <p class="text-center mb-4" data-i18n="index.title">A PhD student at Université Laval</p>
 
                             <div class="">
                                 <p>
@@ -77,12 +77,12 @@
                                 <ul class="social-icons pl-5 pl-md-0">
                                     <li class="pl-4 pl-md-5"><a href="" target="_blank"><i
                                                 class="mr-3 fa-fw fa-solid fa-location-dot" aria-hidden="true"></i>
-                                            Quebec, Canada</a></li>
+                                            <span data-i18n="index.location">Quebec, QC, Canada</span></a></li>
                                     <li class="pl-4 pl-md-5"><a href="https://www.ulaval.ca/" target="https://www.ulaval.ca/"><i
                                                 class="mr-3 fa fa-fw fa-school" aria-hidden="true"></i> Université Laval</a>
                                     </li>
                                     <li class="pl-4 pl-md-5"><a href=""><i class="mr-3 fa-fw fa-solid fa-globe"
-                                                aria-hidden="true"></i> Website</a></li>
+                                                aria-hidden="true"></i> <span data-i18n="index.website">Website</span></a></li>
                                     <li class="pl-4 pl-md-5"><a href="mailto:khaled.sellami.1@ulaval.ca" target="_blank"><i
                                                 class="mr-3 fa-fw fa-regular fa-envelope" aria-hidden="true"></i>
                                             Email</a></li>
@@ -112,8 +112,8 @@
                 </div>
                 <div class="col-sm-8">
                     <div class="">
-                        <h4 class="font-weight-bold">About Me</h4>
-                        <p class="mb-4 text-justify">I am a PhD candidate in Computer Science at Université Laval
+                        <h4 class="font-weight-bold" data-i18n="index.aboutTitle">About Me</h4>
+                        <p class="mb-4 text-justify" data-i18n="index.aboutText">I am a PhD candidate in Computer Science at Université Laval
                             (Canada) specializing in AI-driven software architecture and distributed systems.
                             My research focuses on developing intelligent approaches for automated microservices
                             decomposition, resulting in four peer-reviewed publications in leading journals and
@@ -126,8 +126,8 @@
 
                         </p>
                             <!-- TODO add a description of my reseqrch interests and thesis -->
-                        <h4 class="mt-4 font-weight-bold">Research</h4>
-                        <p class="text-justify">
+                        <h4 class="mt-4 font-weight-bold" data-i18n="index.researchTitle">Research</h4>
+                        <p class="text-justify" data-i18n="index.researchText">
                             While microservices architecture has proven effective for large-scale applications due to
                             its modularity and cloud compatibility, migrating from an established monolithic system to
                             a microservices architecture remains an expensive and challenging process.
@@ -155,10 +155,10 @@
 <!--                            </button>-->
 <!--                        </div>-->
 
-                        <p class="mt-4 text-justify"><span class="font-weight-bold">Research Interests:</span>
-                            Artificial Intelligence, Machine Learning, Deep Learning, Microservices, Code Refactoring, Cloud</p>
+                        <p class="mt-4 text-justify"><span class="font-weight-bold" data-i18n="index.researchInterestsTitle">Research Interests:</span>
+                            <span data-i18n="index.researchInterests">Artificial Intelligence, Machine Learning, Deep Learning, Microservices, Code Refactoring, Cloud</span></p>
 
-                        <h4 class="mt-4 font-weight-bold">News</h4>
+                        <h4 class="mt-4 font-weight-bold" data-i18n="index.newsTitle">News</h4>
 
                         <ul class="">
                             <small>
@@ -199,10 +199,10 @@
 <!--                        </p>-->
 
 
-                        <h4 class="font-weight-bold">Resume</h4>
+                        <h4 class="font-weight-bold" data-i18n="index.resumeTitle">Resume</h4>
                         <div class="mb-5">
-                            <button type="button" class="mt-2 mt-2 btn btn-blue btn-sm"><a href="/assets/pdfs/khaled_sellami_resume.pdf"
-                                    target="_blank">Resume<i class="ml-2 fa-solid fa-circle-info"></i></a> </button>
+                            <button type="button" class="mt-2 mt-2 btn btn-blue btn-sm"><a data-i18n-href="index.resumePath" href="/assets/pdfs/khaled_sellami_resume.pdf"
+                                    target="_blank"><span data-i18n="index.resumeTitle">Resume</span><i class="ml-2 fa-solid fa-circle-info"></i></a> </button>
 <!--                            <button type="button" class="ml-2 mt-2 btn btn-blue btn-sm"><a href=""-->
 <!--                                    target="_blank">Curriculum Vitae<i class="ml-2 fa-regular fa-file"></i></a></button>-->
                         </div>
@@ -218,7 +218,7 @@
 
         <div id="footer">
             <footer-component></footer-component>
-            <footer-component-lemos></footer-component-lemos>
+<!--            <footer-component-lemos></footer-component-lemos>-->
         </div>
     </div>
 
@@ -230,6 +230,12 @@
     <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <script src="/assets/js/main.js"></script>
+    <script type="module">
+        import LanguageManager from './components/languageManager.js';
+
+        // Initialize the language manager
+        await window.languageManager.initialize();
+    </script>
     <script src="/components/header.js" type="text/javascript"></script>
     <script src="/components/footer.js" type="text/javascript"></script>
     <script src="/assets/js/fontawesome651all.min.js" type="text/javascript" defer></script>

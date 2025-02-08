@@ -133,3 +133,60 @@ h1, h2, h3, h4, h5, h6 {
     height: 2.5rem;            /*Footer height*/
     
 }
+
+
+/* Language switcher styles */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  border-left: 1px solid var(--light-gray);
+  padding-left: 1rem;
+}
+
+.language-btn {
+  background: none;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--light-gray) !important;
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.language-btn:hover {
+  color: var(--white-ish) !important;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.language-btn.active {
+  color: var(--white-ish) !important;
+  font-weight: bold;
+  border-color: var(--light-gray);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.language-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: var(--blue-light);
+}
+
+@media (max-width: 991.98px) {
+  .language-switcher {
+    border-left: none;
+    margin-top: 0.5rem;
+    padding-left: 0;
+  }
+  
+  .language-btn {
+    margin: 0 0.25rem;
+  }
+}

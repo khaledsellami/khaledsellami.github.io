@@ -1,0 +1,29 @@
+{
+    "header": {
+        "nav": {
+            "home": "Home",
+            "education": "Education",
+            "experience": "Experience",
+            "publications": "Publications",
+            "projects": "Projects",
+            "skills": "Skills"
+        }
+    },
+    "index": {
+        "title": "A PhD student at Université Laval",
+        "location": "Quebec, QC, Canada",
+        "website": "Website",
+        "aboutTitle": "About Me",
+        "aboutText": "I am a PhD candidate in Computer Science at Université Laval\n                            (Canada) specializing in AI-driven software architecture and distributed systems.\n                            My research focuses on developing intelligent approaches for automated microservices\n                            decomposition, resulting in four peer-reviewed publications in leading journals and\n                            conferences including Empirical Software Engineering (EMSE) and Information and Software Technology (IST).\n                            Previously, I completed a Master's degree in Smart Systems from the National School of Computer Science (Tunisia),\n                            with a focus on deep learning applications. Fully bilingual in English and French,\n                            I combine theoretical expertise in machine learning with strong practical experience in\n                            cloud-native technologies (Kubernetes, Docker), distributed systems design, and\n                            Machine Learning frameworks (PyTorch, Transformers).",
+        "researchTitle": "Research",
+        "researchText": "While microservices architecture has proven effective for large-scale applications due to\n                            its modularity and cloud compatibility, migrating from an established monolithic system to\n                            a microservices architecture remains an expensive and challenging process.\n                            The critical decomposition step of partitioning the monolith's components into target\n                            microservices has been cited as the main obstacle.\n                            <br>\n\n                            My thesis focuses on studying automated decomposition and refactoring approaches for the\n                            purpose of modernizing the migration and modernization process of software architectures.\n                            I introduce AI-based approaches ranging from evolutionary algorithms to LLM-based representation\n                            learning to improve the efficiency of decomposition approaches and provide better microservices recommendations.\n                            In addition, this thesis introduces an approach to automatically refactor monolithic interactions\n                            into RPCs using a combination of Gen AI models and meta-modelling methods.",
+        "researchInterestsTitle": "Research Interests:",
+        "researchInterests": "Artificial Intelligence, Machine Learning, Deep Learning, Microservices, Code Refactoring, Cloud",
+        "newsTitle": "News",
+        "resumeTitle": "Resume",
+        "resumePath": "/assets/pdfs/khaled_sellami_resume.pdf"
+    },
+    "footer": {
+        "quickLinks": "Quick Links"
+    }
+}
