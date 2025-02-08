@@ -4,9 +4,23 @@ class Header extends HTMLElement {
   }
 
   async connectedCallback() {
+    // Wait for languageManager to be available
+    if (!window.languageManager) {
+        await new Promise(resolve => {
+            const checkLanguageManager = () => {
+                if (window.languageManager) {
+                    resolve();
+                } else {
+                    setTimeout(checkLanguageManager, 50);
+                }
+            };
+            checkLanguageManager();
+        });
+    }
     // Register with language manager and wait for initialization
     await window.languageManager?.register(this);
-    this.updateContent();
+    await this.createContent();
+    window.languageManager?.notifyObservers();
   }
 
   disconnectedCallback() {
@@ -14,7 +28,7 @@ class Header extends HTMLElement {
   }
 
   onLanguageChange() {
-    this.updateContent();
+    // this.updateContent();
   }
 
   createLanguageSwitcher() {
@@ -55,7 +69,7 @@ class Header extends HTMLElement {
       return switcherContainer;
   }
 
-  async updateContent() {
+  async createContent() {
     this.innerHTML = `
             <header>
                 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -106,3 +120,4 @@ class Header extends HTMLElement {
 }
 
 customElements.define('header-component', Header);
+// export default Header;

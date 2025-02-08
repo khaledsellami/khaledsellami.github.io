@@ -20,7 +20,7 @@ class Footer extends HTMLElement {
   }
 
   onLanguageChange() {
-    this.updateContent();
+    // this.updateContent();
   }
 
   updateContent() {
