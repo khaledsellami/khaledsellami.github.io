@@ -20,7 +20,7 @@ class LanguageManager {
             // Load all translations
             for (const lang of this.supportedLanguages) {
                 try {
-                    const response = await fetch(`assets/translations/${lang}.json`);
+                    const response = await fetch(`/assets/translations/${lang}.json`);
                     this.translations[lang] = await response.json();
                 } catch (error) {
                     console.error(`Failed to load ${lang} translations:`, error);

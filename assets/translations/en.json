@@ -23,6 +23,48 @@
         "resumeTitle": "Resume",
         "resumePath": "/assets/pdfs/khaled_sellami_resume.pdf"
     },
+    "education": {
+        "pageTitle": "Education",
+        "coreCourses": "Core Courses",
+        "phd": {
+            "location": "Quebec, QC, Canada",
+            "dates": "(May 2021 - Present)",
+            "degree": "Ph.D. in Computer Science",
+            "courses": {
+                "nlp": "IFT-4022: Natural Language Processing",
+                "rl": "IFT-7201: Reinforcement Learning",
+                "bigdata": "GLO-7027: Big Data",
+                "cloud": "GLO-7008: Cloud Native Applications and DevOps"
+            }
+        },
+        "masters": {
+            "location": "Tunis, Tunisia",
+            "dates": "(September 2017 - September 2020)",
+            "degree1": "M.Sc. in Computer Science",
+            "degree2": "Engineering Degree in Computer Science",
+            "school": "National School of Computer Science (ENSI)",
+            "courses": {
+                "ai": "Artificial Intelligence",
+                "ml": "Machine Learning and Deep Learning",
+                "cloud": "Cloud Computing",
+                "bigdata": "Big Data",
+                "arch": "Software Architecture",
+                "algo": "Algorithms, Data Structures and C Programming"
+            }
+        },
+        "prep": {
+            "location": "Tunis, Tunisia",
+            "dates": "(September 2015 - June 2017)",
+            "degree": "Mathematics and Physics",
+            "school": "Preparatory Institute for Engineering Studies of Tunis (IPEIT)",
+            "courses": {
+                "math": "Mathematical Analysis",
+                "algebra": "Algebra and Linear Algebra",
+                "physics": "Physics",
+                "cs": "Computer Science"
+            }
+        }
+    },
     "footer": {
         "quickLinks": "Quick Links"
     }

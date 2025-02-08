@@ -23,6 +23,48 @@
         "resumeTitle": "CV",
         "resumePath": "/assets/pdfs/khaled_sellami_cv.pdf"
     },
+    "education": {
+        "pageTitle": "Études",
+        "coreCourses": "Cours Principaux",
+        "phd": {
+            "location": "Québec, QC, Canada",
+            "dates": "(Mai 2021 - Présent)",
+            "degree": "Doctorat en informatique",
+            "courses": {
+                "nlp": "IFT-4022: Traitement du langage naturel",
+                "rl": "IFT-7201: Apprentissage par renforcement",
+                "bigdata": "GLO-7027: Traitement des données massives",
+                "cloud": "GLO-7008: Applications Cloud Native et DevOps"
+            }
+        },
+        "masters": {
+            "location": "Tunis, Tunisie",
+            "dates": "(Septembre 2017 - Septembre 2020)",
+            "degree1": "M.Sc. en informatique",
+            "degree2": "Diplôme d'ingénieur en informatique",
+            "school": "École Nationale des Sciences de l'Informatique (ENSI)",
+            "courses": {
+                "ai": "Intelligence Artificielle",
+                "ml": "Apprentissage Automatique et Profond",
+                "cloud": "Cloud Computing",
+                "bigdata": "Données Massives",
+                "arch": "Architecture Logicielle",
+                "algo": "Algorithmes, Structures de Données et Programmation C"
+            }
+        },
+        "prep": {
+            "location": "Tunis, Tunisie",
+            "dates": "(Septembre 2015 - Juin 2017)",
+            "degree": "Mathématiques et Physique",
+            "school": "Institut Préparatoire aux Études d'Ingénieur de Tunis (IPEIT)",
+            "courses": {
+                "math": "Analyse Mathématique",
+                "algebra": "Algèbre et Algèbre Linéaire",
+                "physics": "Physique",
+                "cs": "Informatique"
+            }
+        }
+    },
     "footer": {
         "quickLinks": "Liens Rapides"
     }
