@@ -118,39 +118,45 @@ class Header extends HTMLElement {
     this.innerHTML = `
             <header>
                 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-                    <h1><a class="navbar-brand" href="/">Khaled Sellami</a></h1>
-                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" 
-                            data-target="#navbarCollapse" aria-controls="navbarCollapse" 
-                            aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="container-fluid">
+                        <h1><a class="navbar-brand" href="/">Khaled Sellami</a></h1>
                         
-                        <i class="fas fa-bars my-fa-navbar-icon" ></i>
-                        
-                    </button>
-                    <div class="navbar-collapse collapse" id="navbarCollapse" style="">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item mr-2">
-                                <a class="nav-link" href="/" data-i18n="header.nav.home">Home</a>
-                            </li>
-                            <li class="nav-item mr-2">
-                                <a class="nav-link" href="/pages/education.html" data-i18n="header.nav.education">Education</a>
-                            </li>
-                            <li class="nav-item mr-2">
-                                <a class="nav-link" href="/pages/experience.html" data-i18n="header.nav.experience">Experience</a>
-                            </li>
-                            <li class="nav-item mr-2">
-                                <a class="nav-link" href="/pages/publications.html" data-i18n="header.nav.publications">Publications</a>
-                            </li>
-                            <li class="nav-item mr-2">
-                                <a class="nav-link" href="/pages/projects.html" data-i18n="header.nav.projects">Projects</a>
-                            </li>
-                            <li class="nav-item mr-2">
-                                <a class="nav-link" href="/pages/skills.html" data-i18n="header.nav.skills">Skills</a>
-                            </li>
-                        </ul>
-                        <div id="nav-controls" class="d-flex align-items-center">
-                            <div id="language-switcher"></div>
-                            <div class="nav-separator mx-3"></div>
+                        <!-- Theme toggle button - Always visible -->
+                        <div class="theme-toggle-wrapper order-lg-last">
                             <div id="theme-toggle"></div>
+                        </div>
+
+                        <!-- Hamburger menu -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                                data-target="#navbarCollapse" aria-controls="navbarCollapse" 
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars my-fa-navbar-icon"></i>
+                        </button>
+
+                        <!-- Collapsible content -->
+                        <div class="navbar-collapse collapse" id="navbarCollapse">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/" data-i18n="header.nav.home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/pages/education.html" data-i18n="header.nav.education">Education</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/pages/experience.html" data-i18n="header.nav.experience">Experience</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/pages/publications.html" data-i18n="header.nav.publications">Publications</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/pages/projects.html" data-i18n="header.nav.projects">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/pages/skills.html" data-i18n="header.nav.skills">Skills</a>
+                                </li>
+                            </ul>
+                            <!-- Language switcher - Collapses with menu -->
+                            <div id="language-switcher" class="language-switcher-wrapper"></div>
                         </div>
                     </div>
                 </nav>
