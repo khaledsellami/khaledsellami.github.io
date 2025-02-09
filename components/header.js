@@ -18,7 +18,7 @@ class Header extends HTMLElement {
         });
     }
     // Register with language manager and wait for initialization
-    await window.languageManager?.register(this);
+    window.languageManager?.register(this);
 
     // Set initial theme
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -27,12 +27,13 @@ class Header extends HTMLElement {
     document.documentElement.setAttribute('data-theme', theme);
     
     await this.createContent();
-    window.languageManager?.notifyObservers();
 
     // Add theme toggle
-    const navbarCollapse = this.querySelector('.navbar-collapse');
-    const themeToggle = this.createThemeToggle();
-    navbarCollapse.appendChild(themeToggle);
+    // const navbarCollapse = this.querySelector('.navbar-collapse');
+    // const themeToggle = this.createThemeToggle();
+    // navbarCollapse.appendChild(themeToggle);
+
+    window.languageManager?.notifyObservers();
   }
 
   disconnectedCallback() {
@@ -168,10 +169,10 @@ class Header extends HTMLElement {
             switcherContainer.appendChild(this.createLanguageSwitcher());
         }
 
-        // const themeContainer = this.querySelector('#theme-toggle');
-        // if (themeContainer) {
-        //     themeContainer.appendChild(this.createThemeToggle());
-        // }
+        const themeContainer = this.querySelector('#theme-toggle');
+        if (themeContainer) {
+            themeContainer.appendChild(this.createThemeToggle());
+        }
   }
 }
 
