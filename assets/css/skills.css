@@ -2,107 +2,149 @@
 # General
 --------------------------------------------------------------*/
 
-:root {
-  /* --primary-colors --*/
-  --white-ish:#F9F7F7;
-  --light-gray: #DBE2EF;
-  --blue-light:#669bbc;
-  --blue-medium: #0077b6;
-  --blue-dark:rgb(15, 76, 117);
-  --dark-b: #003566;
-  --gray-black: #415a77;
-  --darker-b:#1B262C;
+/* Remove the :root section since we're using theme.css variables */
 
-  /* https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e */
-}
-
-
-h4,h5, p{
+h4, h5, p {
     font-family: 'Ubuntu Sans', sans-serif;
 }
 
 a:hover {
-    color: var(--blue-medium) ;
+    color: var(--primary-medium);
     text-decoration: none !important;
-    /* font-size:1.3rem !important; */
 }
 
-/* body > div > ol:nth-child(7) > li > button > a */
-
 .skill-level-container {
-  margin: 2rem 0;
+    margin: 2rem 0;
 }
 
 .skill-level-title {
-  color: var(--blue-medium);
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid var(--blue-light);
-  padding-bottom: 0.5rem;
+    color: var(--primary-medium);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-light);
+    padding-bottom: 0.5rem;
 }
 
 .skill-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
 }
 
+/* Dark theme specific styles */
+/* @media (prefers-color-scheme: dark) {
+  .skill-item {
+      background-color: rgba(248, 249, 250, 0.85);
+      border: 1px solid rgba(222, 226, 230, 0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+  }
+  
+  .skill-level-title {
+      color: var(--theme-light);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+} */
+
 .skill-item {
-  position: relative;
-  padding: 0.5rem;
-  transition: transform 0.2s;
+    position: relative;
+    padding: 0.5rem;
+    transition: transform 0.2s;
 }
 
 .skill-item:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .skill-level-indicator {
-  height: 6px;
-  margin-top: 8px;
-  border-radius: 3px;
-  border: 1px solid var(--blue-medium);
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
-  background: #ffffff;
+    height: 6px;
+    margin-top: 8px;
+    border-radius: 3px;
+    border: 1px solid var(--primary-medium);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+    background: var(--theme-white);
 }
 
 .skill-level-indicator.expert {
-  background: linear-gradient(90deg, var(--blue-light) 100%,  #ffffff 0%);
+    background: linear-gradient(90deg, var(--primary-light) 100%, var(--theme-white) 0%);
 }
 
 .skill-level-indicator.advanced {
-  background: linear-gradient(90deg, var(--blue-light) 75%, #ffffff 75%);
+    background: linear-gradient(90deg, var(--primary-light) 75%, var(--theme-white) 75%);
 }
 
 .skill-level-indicator.working {
-  background: linear-gradient(90deg, var(--blue-light) 50%, #ffffff 50%);
+    background: linear-gradient(90deg, var(--primary-light) 50%, var(--theme-white) 50%);
 }
 
 .skill-level-indicator.beginner {
-  background: linear-gradient(90deg, var(--blue-light) 25%, #ffffff 25%);
+    background: linear-gradient(90deg, var(--primary-light) 25%, var(--theme-white) 25%);
 }
 
 .skill-item-with-text {
-  display: flex;
-  align-items: center;
-  padding: 5px 10px;
-  border-radius: 4px;
-  margin: 5px;
-  height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 5px;
+    height: 50px;
 }
 
 .skill-item-with-text .skill-icon {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
 }
 
 .skill-item-with-text .skill-name {
-  font-size: 16px;
-  font-weight: 1000;
-  color: #333;
+    font-size: 16px;
+    font-weight: 1000;
+    color: var(--text-color);
+}
+
+/* Section containers */
+.icon-box, .icon-cloud {
+    background: var(--theme-light) !important;
+    border: 2px solid var(--theme-medium) !important;
+}
+
+/* Section headers */
+.section-header {
+    text-align: left;
+    color: var(--primary-light);
+    /* font-weight: bold; */
+    /* margin-top: 1rem; */
+}
+
+.section-header i {
+    /* margin-right: 0.5rem; */
+}
+
+/* Page title styling */
+.page-title {
+    /* margin-bottom: 1.5rem; */
+    font-weight: bold;
+}
+
+/* Spacing utilities */
+.icon-box, .icon-cloud {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+/* Skills category header */
+.skills-category {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    color: var(--primary-light);
+}
+
+.skills-category i {
+    margin-right: 0.5rem;
 }

@@ -1,0 +1,122 @@
+/* Default theme (Dark Gray) */
+:root {
+  /* Base colors */
+  --theme-white: #f8f9fa;
+  --theme-light: #e9ecef;
+  --theme-medium-light: #dee2e6;
+  --theme-medium: #6c757d;
+  --theme-medium-dark: #495057;
+  --theme-dark: #343a40;
+  --theme-black: #212529;
+  --theme-accent: #5c6b73;
+  
+  /* Additional shades */
+  --theme-bluish: #eef2f6;
+  --theme-medium-rgb: rgb(108, 117, 125);
+  --theme-darker: #212529;
+  --theme-blackest: #1a1e21;
+
+  /* Common UI mappings */
+  --white-ish: var(--theme-white);
+  --light-gray: var(--theme-light);
+  --medium-gray: var(--theme-medium);
+  --dark-gray: var(--theme-dark);
+}
+
+/* (Light Gray) */
+/* :root {
+  --theme-white: #ffffff;
+  --theme-light: #f8f9fa;
+  --theme-medium-light: #e9ecef;
+  --theme-medium: #868e96;
+  --theme-medium-dark: #495057;
+  --theme-dark: #4f555d;
+  --theme-black: #5b6067;
+  --theme-accent: #575d62;
+  
+  --theme-bluish: #f8f9fa;
+  --theme-medium-rgb: rgb(134, 142, 150);
+  --theme-darker: #2d3134;
+  --theme-blackest: #232629;
+
+  --white-ish: var(--theme-white);
+  --light-gray: var(--theme-light);
+  --medium-gray: var(--theme-medium);
+  --dark-gray: var(--theme-dark);
+} */
+
+/* Modern Blue theme */
+/* :root {
+  --theme-white: #f8f9fa;
+  --theme-light: #e9ecef;
+  --theme-medium-light: #8ab4f8;
+  --theme-medium: #4285f4;
+  --theme-medium-dark: #1967d2;
+  --theme-dark: #1a73e8;
+  --theme-black: #174ea6;
+  --theme-accent: #5c6b73;
+  
+  --theme-bluish: #e4e9f1;
+  --theme-medium-rgb: rgb(66, 133, 244);
+  --theme-darker: #1565c0;
+  --theme-blackest: #0d47a1;
+} */
+
+/* Original Blue theme */
+:root {
+  --theme-white: #F9F7F7;
+  --theme-light: #DBE2EF;
+  --theme-medium-light: #669bbc;
+  --theme-medium: #0077b6;
+  --theme-medium-dark: #415a77;
+  --theme-dark: #003566;
+  --theme-black: rgb(15, 76, 117);
+  --theme-accent: #1B262C;
+
+  --theme-bluish: #e4e9f1;
+  --theme-medium-rgb: rgb(0, 119, 182);
+  --theme-darker: #003566;
+  --theme-blackest: #1B262C;
+
+  --white-ish: var(--theme-white);
+  --light-gray: var(--theme-light);
+  --medium-gray: var(--theme-medium);
+  --dark-gray: var(--theme-dark);
+}
+
+
+ /* :root {
+  --theme-white: #1a1f25;      
+  --theme-light: #242c37;      
+  --theme-medium-light: #2d485e;
+  --theme-medium: #4895c5;     
+  --theme-medium-dark: #66b3e3;
+  --theme-dark: #89c4e8;       
+  --theme-black: #DBE2EF;      
+  --theme-accent: #4a98c9;
+  
+  --theme-bluish: #1e2832;     
+  --theme-medium-rgb: rgb(72, 149, 197);
+  --theme-darker: #141a21;
+  --theme-blackest: #0f1419;
+
+  --white-ish: var(--theme-white);
+  --light-gray: var(--theme-light);
+  --medium-gray: var(--theme-medium);
+  --dark-gray: var(--theme-dark);
+}  */
+  
+  /* From original template */
+  /* :root {
+    --white-ish:#F9F7F7;
+  --light-gray: #DBE2EF;
+  --bluish-gray: #e4e9f1;
+  --blue-light:#669bbc;
+  --blue-medium: #0077b6;
+  --blue-medium-rgb: rgb(0, 119, 182);
+  --blue-dark:#0f4c75;
+  --dark-b: #003566;
+  --gray-black: #415a77;
+  --darker-b:#1B262C;
+} */
+

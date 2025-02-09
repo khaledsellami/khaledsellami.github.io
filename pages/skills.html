@@ -12,380 +12,385 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="/assets/css/themes.css" rel="stylesheet">
     <link href="/assets/css/main.css" rel="stylesheet">
     <link href="/assets/css/skills.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/fontawesome651.all.min.css">
 
     <!-- Google Fonts CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
-        rel="stylesheet">
+          rel="stylesheet">
 
 
 </head>
 
 <body>
-    <header-component></header-component>
+<header-component></header-component>
 
-    <div class="container mt-4">
-        <h5 class="mb-4"><b>__ <span data-i18n="skills.pageTitle">Skills</span> _____________________</b></h5>
+<div class="container mt-4">
+    <h5 class="page-title mb-4">
+        <b>__ <span data-i18n="skills.pageTitle">Skills</span> _____________________</b>
+    </h5>
 
-        <div class="row">
-            <div class="col-lg-12" data-aos="fade-up">
-                <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
-                    style="background:var(--light-gray); border:solid var(--blue-medium) 2px">
-                    <h4 class="mt-4 font-weight-bold" style="text-align:left;color:var(--blue-light)"><i
-                            class="fa-solid fa-code mr-2"></i><span data-i18n="skills.languages.title">Programming/Scripting Languages</span></h4>
-                    <!-- <p style="text-align:left;">
-                        <img class="ml-2" src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg"
-                            alt="vectorlogo.zone" height="50" width="150">
-                        <img class="ml-2" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg"
-                            alt="vectorlogo.zone">
-                        <img class="ml-2"
-                            src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-                            alt="upload.wikimedia.org" height="60" width="90">
-                        <img class="ml-2" src="https://www.vectorlogo.zone/logos/javascript/javascript-horizontal.svg"
-                            alt="vectorlogo.zone" height="50" width="120">
-                        <img class="ml-2" src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg"
-                            alt="vectorlogo.zone" height="70" width="130">
-                        <img class="ml-2" src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg"
-                            alt="vectorlogo.zone" height="50" width="190">
-                        <img class="ml-2" src="https://www.vectorlogo.zone/logos/oracle/oracle-ar21.svg"
-                            alt="vectorlogo.zone" height="50" width="120">
-                        <img class="ml-2" src="https://www.vectorlogo.zone/logos/sqlite/sqlite-ar21.svg"
-                            alt="vectorlogo.zone" height="50" width="190">
-
-
-                    </p> -->
-                    <!-- Expert Level -->
-                    <div class="skill-level-container">
-                        <h5 class="skill-level-title" data-i18n="skills.languages.expert">Expert Proficiency</h5>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python" height="50">
-                                <div class="skill-level-indicator expert"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Advanced Level -->
-                    <div class="skill-level-container">
-                        <h5 class="skill-level-title" data-i18n="skills.languages.advanced">Advanced Experience</h5>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="Java" height="50">
-                                <div class="skill-level-indicator advanced"></div>
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-ar21.svg" alt="Bash" height="50">
-                                <div class="skill-level-indicator advanced"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Working Knowledge Level -->
-                    <div class="skill-level-container">
-                        <h5 class="skill-level-title" data-i18n="skills.languages.working">Working Knowledge</h5>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/csharp.svg" alt="C#" height="50">
-                                <div class="skill-level-indicator working"></div>
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/isocpp/isocpp-icon.svg" alt="C++" height="50">
-                                <div class="skill-level-indicator working"></div>
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/golang/golang-ar21.svg" alt="Golang" height="50">
-                                <div class="skill-level-indicator working"></div>
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg" alt="JavaScript" height="50">
-                                <div class="skill-level-indicator working"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Basic Knowledge -->
-                    <div class="skill-level-container">
-                        <h5 class="skill-level-title" data-i18n="skills.languages.basic">Basic Knowledge</h5>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/ruby-lang/ruby-lang-ar21.svg" alt="Ruby" height="50">
-                                <div class="skill-level-indicator beginner"></div>
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/rust-lang/rust-lang-ar21.svg" alt="Rust" height="50">
-                                <div class="skill-level-indicator beginner"></div>
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/open-std_c/open-std_c-icon~alt.svg" alt="C" height="50">
-                                <div class="skill-level-indicator beginner"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 mt-5 pb-1 icon-box" data-aos="lefade-up" data-aos-delay="100"
-                    style="background:var(--light-gray); border:solid var(--blue-medium) 2px">
-                    <h4 class="mt-3 font-weight-bold" style="text-align:left;color:var(--blue-light)"><i
-                            class="fa-solid fa-cube mr-2"></i><span data-i18n="skills.frameworks.title">Frameworks</span></h4>
-
-                    <!-- Data Science & ML -->
-                    <div class="skill-level-container">
-                        <h5 class="skill-level-title" data-i18n="skills.frameworks.datascience">Data Science & ML</h5>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg" alt="PyTorch" height="50">
-<!--                                <div class="skill-level-indicator expert"></div>-->
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/fr/4/45/Hugging_Face_logo.svg" alt="HuggingFace" height="40">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://raw.githubusercontent.com/detain/svg-logos/b02ee1ac30c7ff4757278337c95588b01ed0954b/svg/l/langchain-1.svg" alt="LangChain" height="30">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/520px-Scikit_learn_logo_small.svg.png?20180808062052" alt="Scikit-learn" height="50">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://raw.githubusercontent.com/valohai/ml-logos/d8dfb916e50a93a41f3b1ed2ca7bd3dbc77030a2/pandas.svg" alt="Pandas" height="50">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/numpy/numpy-ar21.svg" alt="Numpy" height="50">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/apache_spark/apache_spark-ar21.svg" alt="Spark" height="50">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://github.com/ray-project/ray/raw/master/doc/source/images/ray_header_logo.png" alt="Ray" height="50">
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-item-with-text">
-                                    <div class="skill-icon">
-                                        <img src="https://github.com/scikit-image/scikit-image/blob/main/doc/source/_static/logo.png?raw=true" alt="scikit-image" height="50">
-                                    </div>
-                                    <span class="skill-name">scikit-image</span>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="TensorFlow" height="70">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://raw.githubusercontent.com/valohai/ml-logos/d8dfb916e50a93a41f3b1ed2ca7bd3dbc77030a2/keras-text.svg" alt="Keras" height="30">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://geopandas.org/en/stable/_static/geopandas_logo_web.svg" alt="GeoPandas" height="40">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://deap.readthedocs.io/en/master/_images/deap_long.png" alt="DEAP" height="70">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://optuna.org/assets/img/optuna-logo@2x.png" alt="Optuna" height="30">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.statsmodels.org/stable/_images/statsmodels-logo-v2-horizontal.svg" alt="Statsmodels" height="30">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://github.com/linkedin/greykite/raw/master/LOGO-C8.png" alt="GreyKite" height="70">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/opencv/opencv-ar21.svg" alt="OpenCV" height="50">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Visualization -->
-                    <div class="skill-level-container">
-                        <h5 class="skill-level-title" data-i18n="skills.frameworks.visualization">Visualization</h5>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <img src="https://raw.githubusercontent.com/valohai/ml-logos/d8dfb916e50a93a41f3b1ed2ca7bd3dbc77030a2/matplotlib.svg" alt="matplotlib" height="20">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" alt="Seaborn" height="40">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/plotly/plotly-ar21.svg" alt="Plotly" height="50">
-                            </div>
-                            <div class="skill-item">
-                                <img src="" alt="" height="50">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Web Frameworks -->
-                    <div class="skill-level-container">
-                        <h5 class="skill-level-title" data-i18n="skills.frameworks.web">Web Frameworks</h5>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/vuejs/vuejs-ar21.svg" alt="Vue.js" height="50">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="Django" height="50">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/palletsprojects_flask/palletsprojects_flask-ar21~v2.svg" alt="Flask" height="50">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://raw.githubusercontent.com/gilbarbara/logos/92bb74e98bca1ea1ad794442676ebc4e75038adc/logos/grpc.svg" alt="gRPC" height="30">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/springio/springio-ar21.svg" alt="Spring" height="50">
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="Bootstrap" height="50">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="row">
+        <div class="col-lg-12" data-aos="fade-up">
+            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+                <h4 class="section-header mt-4 font-weight-bold">
+                    <i class="fa-solid fa-code mr-2"></i>
+                    <span data-i18n="skills.languages.title">Programming/Scripting Languages</span>
+                </h4>
+                <!-- <p style="text-align:left;">
+                    <img class="ml-2" src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg"
+                        alt="vectorlogo.zone" height="50" width="150">
+                    <img class="ml-2" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg"
+                        alt="vectorlogo.zone">
+                    <img class="ml-2"
+                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                        alt="upload.wikimedia.org" height="60" width="90">
+                    <img class="ml-2" src="https://www.vectorlogo.zone/logos/javascript/javascript-horizontal.svg"
+                        alt="vectorlogo.zone" height="50" width="120">
+                    <img class="ml-2" src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg"
+                        alt="vectorlogo.zone" height="70" width="130">
+                    <img class="ml-2" src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg"
+                        alt="vectorlogo.zone" height="50" width="190">
+                    <img class="ml-2" src="https://www.vectorlogo.zone/logos/oracle/oracle-ar21.svg"
+                        alt="vectorlogo.zone" height="50" width="120">
+                    <img class="ml-2" src="https://www.vectorlogo.zone/logos/sqlite/sqlite-ar21.svg"
+                        alt="vectorlogo.zone" height="50" width="190">
 
 
-
-                <div class="col-md-12 my-5 icon-cloud" data-aos="lefade-up" data-aos-delay="100"
-                     style="background:var(--light-gray); border:solid var(--blue-medium) 2px">
-                    <h4 class="mt-3 font-weight-bold" style="text-align:left;color:var(--blue-light)"><i
-                            class="fa-solid fa-cloud mr-3"></i><span data-i18n="skills.cloud.title">Cloud and MLOps</span></h4>
+                </p> -->
+                <!-- Expert Level -->
+                <div class="skill-level-container">
+                    <h5 class="skill-level-title" data-i18n="skills.languages.expert">Expert Proficiency</h5>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg" alt="Docker">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-ar21.svg" alt="Kubernetes">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/helmsh/helmsh-ar21.svg" alt="Helm">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/grafana/grafana-ar21.svg" alt="Grafana">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://avatars.githubusercontent.com/u/11860887?v=4" alt="Zipkin" height="50">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/wandbai/wandbai-ar21.svg" alt="wandbai">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://raw.githubusercontent.com/benc-uk/icon-collection/e33ee714d05a24a81cf6ccd967ef34b22cb77e65/azure-patterns/mlflow.svg" alt="mlflow" height="50">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Slurm_logo.svg/1180px-Slurm_logo.svg.png?20170928000248" alt="Slurm" height="50">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-ar21.svg" alt="Azure" height="50">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" alt="AWS" height="50">
+                            <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python" height="50">
+                            <div class="skill-level-indicator expert"></div>
                         </div>
                     </div>
                 </div>
 
-
-
-                <div class="col-md-12 mt-5 mb-5 icon-box" data-aos="lefade-up" data-aos-delay="100"
-                     style="background:var(--light-gray); border:solid var(--blue-medium) 2px">
-                    <h4 class="mt-3 font-weight-bold" style="text-align:left;color:var(--blue-light)"><i
-                            class="fa-solid fa-screwdriver-wrench mr-2"></i><span data-i18n="skills.tools.title">Tools and Environments</span></h4>
+                <!-- Advanced Level -->
+                <div class="skill-level-container">
+                    <h5 class="skill-level-title" data-i18n="skills.languages.advanced">Advanced Experience</h5>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git">
+                            <img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="Java" height="50">
+                            <div class="skill-level-indicator advanced"></div>
                         </div>
                         <div class="skill-item">
-                            <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/cecddc39126160a51529acd9beea56395d991da4/icons/file_type_dvc.svg" alt="DVC" height="50">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/github/github-ar21.svg" alt="Github">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/gitlab/gitlab-ar21.svg" alt="Gitlab">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/bitbucket/bitbucket-official.svg" alt="Bitbucket" height="20">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="Jupyter">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/1599px-LaTeX_logo.svg.png?20210414121601" alt="LaTeX" height="40">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg" alt="VSCode">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/VMware_logo.svg/1600px-VMware_logo.svg.png?20160108024639" alt="VMware" height="30">
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/virtualbox/virtualbox-ar21.svg" alt="VirtualBox">
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-item-with-text">
-                                <div class="skill-icon">
-                                    <img src="https://raw.githubusercontent.com/gilbarbara/logos/92bb74e98bca1ea1ad794442676ebc4e75038adc/logos/markdown.svg" alt="markdown" height="30">
-                                </div>
-                                <span class="skill-name">Markdown</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-item-with-text">
-                                <div class="skill-icon">
-                                    <img src="https://www.vectorlogo.zone/logos/qtio/qtio-icon.svg" alt="QTCreator" height="50">
-                                </div>
-                                <span class="skill-name" style="color: #41cd52;">Creator</span>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-item-with-text">
-                                <div class="skill-icon">
-                                    <img src="https://www.vectorlogo.zone/logos/oracle/oracle-icon.svg" alt="OracleRDF" height="40">
-                                </div>
-                                <span class="skill-name" style="color: #e30613;">Oracle RDF</span>
-                            </div>
+                            <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-ar21.svg" alt="Bash" height="50">
+                            <div class="skill-level-indicator advanced"></div>
                         </div>
                     </div>
                 </div>
 
-
-
-                <div class="col-md-12 mt-5 mb-5 icon-box" data-aos="lefade-up" data-aos-delay="100"
-                     style="background:var(--light-gray); border:solid var(--blue-medium) 2px">
-                    <h4 class="mt-3 font-weight-bold" style="text-align:left;color:var(--blue-light)"><i
-                            class="fa-solid fa-database mr-2"></i><span data-i18n="skills.databases.title">Databases</span></h4>
+                <!-- Working Knowledge Level -->
+                <div class="skill-level-container">
+                    <h5 class="skill-level-title" data-i18n="skills.languages.working">Working Knowledge</h5>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/neo4j/neo4j-ar21.svg" alt="neo4g">
+                            <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/csharp.svg" alt="C#" height="50">
+                            <div class="skill-level-indicator working"></div>
                         </div>
                         <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg" alt="MySQL">
+                            <img src="https://www.vectorlogo.zone/logos/isocpp/isocpp-icon.svg" alt="C++" height="50">
+                            <div class="skill-level-indicator working"></div>
                         </div>
                         <div class="skill-item">
-                            <img src="https://www.vectorlogo.zone/logos/oracle/oracle-ar21.svg" alt="Oracle">
+                            <img src="https://www.vectorlogo.zone/logos/golang/golang-ar21.svg" alt="Golang" height="50">
+                            <div class="skill-level-indicator working"></div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg" alt="JavaScript" height="50">
+                            <div class="skill-level-indicator working"></div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Basic Knowledge -->
+                <div class="skill-level-container">
+                    <h5 class="skill-level-title" data-i18n="skills.languages.basic">Basic Knowledge</h5>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/ruby-lang/ruby-lang-ar21.svg" alt="Ruby" height="50">
+                            <div class="skill-level-indicator beginner"></div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/rust-lang/rust-lang-ar21.svg" alt="Rust" height="50">
+                            <div class="skill-level-indicator beginner"></div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/open-std_c/open-std_c-icon~alt.svg" alt="C" height="50">
+                            <div class="skill-level-indicator beginner"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="col-md-12 mt-5 pb-1 icon-box" data-aos="lefade-up" data-aos-delay="100">
+                <h4 class="section-header mt-3 font-weight-bold">
+                    <i class="fa-solid fa-cube mr-2"></i>
+                    <span data-i18n="skills.frameworks.title">Frameworks</span>
+                </h4>
+
+                <!-- Data Science & ML -->
+                <div class="skill-level-container">
+                    <h5 class="skill-level-title" data-i18n="skills.frameworks.datascience">Data Science & ML</h5>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg" alt="PyTorch" height="50">
+                            <!--                                <div class="skill-level-indicator expert"></div>-->
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/fr/4/45/Hugging_Face_logo.svg" alt="HuggingFace" height="40">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://raw.githubusercontent.com/detain/svg-logos/b02ee1ac30c7ff4757278337c95588b01ed0954b/svg/l/langchain-1.svg" alt="LangChain" height="30">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/520px-Scikit_learn_logo_small.svg.png?20180808062052" alt="Scikit-learn" height="50">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://raw.githubusercontent.com/valohai/ml-logos/d8dfb916e50a93a41f3b1ed2ca7bd3dbc77030a2/pandas.svg" alt="Pandas" height="50">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/numpy/numpy-ar21.svg" alt="Numpy" height="50">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/apache_spark/apache_spark-ar21.svg" alt="Spark" height="50">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://github.com/ray-project/ray/raw/master/doc/source/images/ray_header_logo.png" alt="Ray" height="50">
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-with-text">
+                                <div class="skill-icon">
+                                    <img src="https://github.com/scikit-image/scikit-image/blob/main/doc/source/_static/logo.png?raw=true" alt="scikit-image" height="50">
+                                </div>
+                                <span class="skill-name">scikit-image</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="TensorFlow" height="70">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://raw.githubusercontent.com/valohai/ml-logos/d8dfb916e50a93a41f3b1ed2ca7bd3dbc77030a2/keras-text.svg" alt="Keras" height="30">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://geopandas.org/en/stable/_static/geopandas_logo_web.svg" alt="GeoPandas" height="40">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://deap.readthedocs.io/en/master/_images/deap_long.png" alt="DEAP" height="70">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://optuna.org/assets/img/optuna-logo@2x.png" alt="Optuna" height="30">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.statsmodels.org/stable/_images/statsmodels-logo-v2-horizontal.svg" alt="Statsmodels" height="30">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://github.com/linkedin/greykite/raw/master/LOGO-C8.png" alt="GreyKite" height="70">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/opencv/opencv-ar21.svg" alt="OpenCV" height="50">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visualization -->
+                <div class="skill-level-container">
+                    <h5 class="skill-level-title" data-i18n="skills.frameworks.visualization">Visualization</h5>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="https://raw.githubusercontent.com/valohai/ml-logos/d8dfb916e50a93a41f3b1ed2ca7bd3dbc77030a2/matplotlib.svg" alt="matplotlib" height="20">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" alt="Seaborn" height="40">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/plotly/plotly-ar21.svg" alt="Plotly" height="50">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Frameworks -->
+                <div class="skill-level-container">
+                    <h5 class="skill-level-title" data-i18n="skills.frameworks.web">Web Frameworks</h5>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/vuejs/vuejs-ar21.svg" alt="Vue.js" height="50">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="Django" height="50">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/palletsprojects_flask/palletsprojects_flask-ar21~v2.svg" alt="Flask" height="50">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://raw.githubusercontent.com/gilbarbara/logos/92bb74e98bca1ea1ad794442676ebc4e75038adc/logos/grpc.svg" alt="gRPC" height="30">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/springio/springio-ar21.svg" alt="Spring" height="50">
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="Bootstrap" height="50">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-12 my-5 icon-cloud" data-aos="lefade-up" data-aos-delay="100">
+                <h4 class="section-header mt-3 font-weight-bold">
+                    <i class="fa-solid fa-cloud mr-3"></i>
+                    <span data-i18n="skills.cloud.title">Cloud and MLOps</span>
+                </h4>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg" alt="Docker">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-ar21.svg" alt="Kubernetes">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/helmsh/helmsh-ar21.svg" alt="Helm">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/grafana/grafana-ar21.svg" alt="Grafana">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://avatars.githubusercontent.com/u/11860887?v=4" alt="Zipkin" height="50">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/wandbai/wandbai-ar21.svg" alt="wandbai">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://raw.githubusercontent.com/benc-uk/icon-collection/e33ee714d05a24a81cf6ccd967ef34b22cb77e65/azure-patterns/mlflow.svg" alt="mlflow" height="50">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Slurm_logo.svg/1180px-Slurm_logo.svg.png?20170928000248" alt="Slurm" height="50">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-ar21.svg" alt="Azure" height="50">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" alt="AWS" height="50">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-12 mt-5 mb-5 icon-box" data-aos="lefade-up" data-aos-delay="100">
+                <h4 class="section-header mt-3 font-weight-bold">
+                    <i class="fa-solid fa-screwdriver-wrench mr-2"></i>
+                    <span data-i18n="skills.tools.title">Tools and Environments</span>
+                </h4>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/cecddc39126160a51529acd9beea56395d991da4/icons/file_type_dvc.svg" alt="DVC" height="50">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/github/github-ar21.svg" alt="Github">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/gitlab/gitlab-ar21.svg" alt="Gitlab">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/bitbucket/bitbucket-official.svg" alt="Bitbucket" height="20">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="Jupyter">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/1599px-LaTeX_logo.svg.png?20210414121601" alt="LaTeX" height="40">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg" alt="VSCode">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/VMware_logo.svg/1600px-VMware_logo.svg.png?20160108024639" alt="VMware" height="30">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/virtualbox/virtualbox-ar21.svg" alt="VirtualBox">
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-item-with-text">
+                            <div class="skill-icon">
+                                <img src="https://raw.githubusercontent.com/gilbarbara/logos/92bb74e98bca1ea1ad794442676ebc4e75038adc/logos/markdown.svg" alt="markdown" height="30">
+                            </div>
+                            <span class="skill-name">Markdown</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-item-with-text">
+                            <div class="skill-icon">
+                                <img src="https://www.vectorlogo.zone/logos/qtio/qtio-icon.svg" alt="QTCreator" height="50">
+                            </div>
+                            <span class="skill-name" style="color: #41cd52;">Creator</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-item-with-text">
+                            <div class="skill-icon">
+                                <img src="https://www.vectorlogo.zone/logos/oracle/oracle-icon.svg" alt="OracleRDF" height="40">
+                            </div>
+                            <span class="skill-name" style="color: #e30613;">Oracle RDF</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-12 mt-5 mb-5 icon-box" data-aos="lefade-up" data-aos-delay="100">
+                <h4 class="section-header mt-3 font-weight-bold">
+                    <i class="fa-solid fa-database mr-2"></i>
+                    <span data-i18n="skills.databases.title">Databases</span>
+                </h4>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/neo4j/neo4j-ar21.svg" alt="neo4g">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg" alt="MySQL">
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/oracle/oracle-ar21.svg" alt="Oracle">
+                    </div>
+                </div>
+            </div>
+
         </div>
-
-
     </div>
 
-    <footer-component></footer-component>
-    <footer-component-lemos></footer-component-lemos>
+
+</div>
+
+<footer-component></footer-component>
+<footer-component-lemos></footer-component-lemos>
 
 
-    <script src="/assets/vendor/jquery/jquery.slim.min.js"></script>
-    <script src="/assets/vendor/bootstrap/js/popper.min.js"></script>
-    <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/vendor/jquery/jquery.slim.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/popper.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="/assets/js/main.js"></script>
-    <script type="module">
-        import LanguageManager from '/components/languageManager.js';
+<script src="/assets/js/main.js"></script>
+<script type="module">
+    import LanguageManager from '/components/languageManager.js';
 
-        // Initialize the language manager
-        await window.languageManager.initialize();
-    </script>
-    <script src="/components/header.js" type="text/javascript" defer></script>
-    <script src="/components/footer.js" type="text/javascript"></script>
+    // Initialize the language manager
+    await window.languageManager.initialize();
+</script>
+<script src="/components/header.js" type="text/javascript" defer></script>
+<script src="/components/footer.js" type="text/javascript"></script>
 <!--    <script src="/components/footer-lemos.js" type="text/javascript"></script>-->
-    <script src="/assets/js/fontawesome651all.min.js" type="text/javascript" defer></script>
+<script src="/assets/js/fontawesome651all.min.js" type="text/javascript" defer></script>
 
 
 </body>

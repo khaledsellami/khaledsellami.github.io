@@ -2,87 +2,59 @@
 # General
 --------------------------------------------------------------*/
 
-:root {
-  /* --primary-colors --*/
-  --white-ish:#F9F7F7;
-  --light-gray: #DBE2EF;
-  --blue-light:#669bbc;
-  --blue-medium: #0077b6;
-  --blue-dark:rgb(15, 76, 117);
-  --dark-b: #003566;
-  --gray-black: #415a77;
-  --darker-b:#1B262C;
-
-  /* https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e */
-}
-
+/* Remove root section as we're using theme.css variables */
 
 .ref-author-lemos {
     font-weight: 700; 
-    color:var(--darker-b);
+    color: var(--primary-dark);
 }
 
-.ref-journal{
+.ref-journal {
     font-weight: 700; 
     font-style: italic;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:var(--blue-medium);
+    color: var(--primary-medium);
 }
 
-h4, h5, p{
+h4, h5, p {
     font-family: 'Ubuntu Sans', 'sans-serif';
 }
 
-
-
 li > span > a:hover {
-    color: var(--blue-medium);
+    color: var(--primary-medium);
     text-decoration: none;
-    font-size:1.001rem ;
-	font-weight: 700 !important;
-  }
+    font-size: 1.001rem;
+    font-weight: 700 !important;
+}
 
-/* .btn-blue{
-    color: var(--white-ish);
-    background-color: var(--blue-medium);
-    border-color: var(--light-gray);
-}   */
-
-.btn-blue{
-    color: var(--white-ish) !important;
-    background-color: var(--blue-light);
-    border-color: var(--light-gray);
+.btn-blue {
+    color: var(--theme-white) !important;
+    background-color: var(--primary-light);
+    border-color: var(--theme-light);
 } 
 
-.btn-blue > a{
-    color: var(--white-ish);
-    /* background-color: var(--blue-medium); */
-    border-color: var(--light-gray);
+.btn-blue > a {
+    color: var(--theme-white);
+    border-color: var(--theme-light);
 }
 
-button:hover{
-    font-size:1.001rem ;
-    background-color: var(--blue-medium);
+button:hover {
+    font-size: 1.001rem;
+    background-color: var(--primary-medium);
 }
 
-li > button > a:hover{
-    color: var(--white-ish) !important;
+li > button > a:hover {
+    color: var(--theme-white) !important;
     text-decoration: none;
 }
 
-
-a:hover {
-    color: var(--blue-medium) ;
-    text-decoration: none !important;
-    /* font-size:1.3rem !important; */
+button > a:hover {
+    color: var(--theme-white) !important;
+    text-decoration: none;
 }
 
-
-/* body > div > ol:nth-child(7) > li > button > a */
-
-.articles-card{
-	
-	background-color: var(--bluish-gray);
-	border-radius: 5px;
-	border: 1px solid var(--blue-light);
+.articles-card {
+    background-color: var(--theme-bluish);
+    border-radius: 5px;
+    border: 1px solid var(--primary-light);
 }
