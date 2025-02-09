@@ -84,6 +84,49 @@
   --dark-gray: var(--theme-dark);
 }
 
+/* Blue Theme - Light Version */
+[data-theme="light"] {
+  --theme-white: #F9F7F7;
+  --theme-light: #DBE2EF;
+  --theme-medium-light: #669bbc;
+  --theme-medium: #0077b6;
+  --theme-medium-dark: #415a77;
+  --theme-dark: #003566;
+  --theme-black: rgb(15, 76, 117);
+  --theme-accent: #1B262C;
+  
+  --theme-bluish: #e4e9f1;
+  --theme-medium-rgb: rgb(0, 119, 182);
+  --theme-darker: #003566;
+  --theme-blackest: #1B262C;
+
+  --white-ish: var(--theme-white);
+  --light-gray: var(--theme-light);
+  --medium-gray: var(--theme-medium);
+  --dark-gray: var(--theme-dark);
+}
+
+/* Blue Theme - Dark Version */
+[data-theme="dark"] {
+  --theme-white: #1a1f25;      
+  --theme-light: #242c37;      
+  --theme-medium-light: #2d485e;
+  --theme-medium: #4895c5;     
+  --theme-medium-dark: #66b3e3;
+  --theme-dark: #89c4e8;       
+  --theme-black: #DBE2EF;      
+  --theme-accent: #4a98c9;
+  
+  --theme-bluish: #1e2832;     
+  --theme-medium-rgb: rgb(72, 149, 197);
+  --theme-darker: #141a21;
+  --theme-blackest: #0f1419;
+
+  --white-ish: var(--theme-white);
+  --light-gray: var(--theme-light);
+  --medium-gray: var(--theme-medium);
+  --dark-gray: var(--theme-dark);
+}
 
  /* :root {
   --theme-white: #1a1f25;      

@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 .footer-icons{
-    color: var(--primary-light);   
+    color: var (--primary-light);   
 }
 
 .footer-icons:hover{
@@ -170,4 +170,67 @@ h1, h2, h3, h4, h5, h6 {
   .language-btn {
     margin: 0 0.25rem;
   }
+}
+
+/* Theme toggle button styles */
+.theme-toggle-btn {
+    padding: 0.25rem 0.5rem;
+    border-radius: 1.5rem;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border: 2px solid var(--theme-white);
+width: 2.5rem;  /* Fixed width */
+    height: 2.5rem; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle-btn i {
+    font-size: 1.2rem;
+    color: var(--theme-white);
+width: 1.2rem;   /* Fixed width */
+    height: 1.2rem;  /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle-btn svg {
+    color: var(--theme-white);
+}
+
+.theme-toggle-btn:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Remove Bootstrap's default outline styles */
+.theme-toggle-btn:focus,
+.theme-toggle-btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Theme-dependent styles */
+[data-theme="light"] .dark-icon,
+[data-theme="dark"] .light-icon {
+    display: none !important;
+}
+
+[data-theme="light"] .light-icon,
+[data-theme="dark"] .dark-icon {
+    display: inline-block !important;
+}
+
+/* Update navbar styles for theme switching */
+.navbar-toggler {
+    border: 2px solid var(--theme-white) !important;
+    padding: 0.25rem 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon .my-fa-navbar-icon {
+  color:rgba(var(--theme-white), 1) !important;
+  font-size:28px;
 }

@@ -19,8 +19,20 @@ class Header extends HTMLElement {
     }
     // Register with language manager and wait for initialization
     await window.languageManager?.register(this);
+
+    // Set initial theme
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('theme-preference');
+    const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+    
     await this.createContent();
     window.languageManager?.notifyObservers();
+
+    // Add theme toggle
+    const navbarCollapse = this.querySelector('.navbar-collapse');
+    const themeToggle = this.createThemeToggle();
+    navbarCollapse.appendChild(themeToggle);
   }
 
   disconnectedCallback() {
@@ -69,6 +81,39 @@ class Header extends HTMLElement {
       return switcherContainer;
   }
 
+  createThemeToggle() {
+    const toggleContainer = document.createElement('div');
+    toggleContainer.className = 'theme-toggle ml-3';
+    
+    const toggle = document.createElement('button');
+    toggle.className = 'btn theme-toggle-btn'; // Removed btn-outline-light class
+    toggle.innerHTML = `
+        <i class="fas fa-sun light-icon"></i>
+        <i class="fas fa-moon dark-icon d-none"></i>
+    `;
+    
+    toggle.addEventListener('click', () => this.toggleTheme());
+    toggleContainer.appendChild(toggle);
+    
+    return toggleContainer;
+  }
+
+  toggleTheme() {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    const newTheme = isDark ? 'light' : 'dark';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme-preference', newTheme);
+    
+    // Toggle icons
+    const toggle = document.querySelector('.theme-toggle-btn');
+    const sunIcon = toggle.querySelector('.light-icon');
+    const moonIcon = toggle.querySelector('.dark-icon');
+    
+    sunIcon.classList.toggle('d-none');
+    moonIcon.classList.toggle('d-none');
+  }
+
   async createContent() {
     this.innerHTML = `
             <header>
@@ -77,7 +122,9 @@ class Header extends HTMLElement {
                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" 
                             data-target="#navbarCollapse" aria-controls="navbarCollapse" 
                             aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        
+                        <i class="fas fa-bars my-fa-navbar-icon" ></i>
+                        
                     </button>
                     <div class="navbar-collapse collapse" id="navbarCollapse" style="">
                         <ul class="navbar-nav ml-auto">
@@ -100,22 +147,25 @@ class Header extends HTMLElement {
                                 <a class="nav-link" href="/pages/skills.html" data-i18n="header.nav.skills">Skills</a>
                             </li>
                         </ul>
-                        <div id="language-switcher"></div>
+                        <div id="nav-controls" class="d-flex align-items-center">
+                            <div id="language-switcher"></div>
+                            <div class="nav-separator mx-3"></div>
+                            <div id="theme-toggle"></div>
+                        </div>
                     </div>
                 </nav>
             </header>
         `;
 
-        // // Wait for language manager initialization
-        // await window.languageManager?.initialize();
-
-        // // Add language switcher
-        // const languageSwitcher = window.languageManager.languageSwitcher;
-        // this.querySelector('#language-switcher').appendChild(languageSwitcher);
         const switcherContainer = this.querySelector('#language-switcher');
         if (switcherContainer) {
             switcherContainer.appendChild(this.createLanguageSwitcher());
         }
+
+        // const themeContainer = this.querySelector('#theme-toggle');
+        // if (themeContainer) {
+        //     themeContainer.appendChild(this.createThemeToggle());
+        // }
   }
 }
 

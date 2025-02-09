@@ -30,6 +30,21 @@ a:hover {
     flex-wrap: wrap;
     gap: 1.5rem;
     align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .skill-item {
+    background-color: var(--theme-black);
+    border: 1px solid var(--theme-medium-light);
+    box-shadow: 0 2px 4px var(--theme-blackest);
+}
+
+[data-theme="light"] .skill-item {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
 }
 
 /* Dark theme specific styles */
@@ -57,6 +72,14 @@ a:hover {
     transform: translateY(-5px);
 }
 
+[data-theme="light"] .skill-item:hover {
+    background-color: var(--theme-light);
+}
+
+[data-theme="dark"] .skill-item:hover {
+    background-color: var(--theme-dark);
+}
+
 .skill-level-indicator {
     height: 6px;
     margin-top: 8px;
@@ -80,6 +103,29 @@ a:hover {
 
 .skill-level-indicator.beginner {
     background: linear-gradient(90deg, var(--primary-light) 25%, var(--theme-white) 25%);
+}
+
+/* Dark theme gradients */
+[data-theme="dark"] .skill-level-indicator.expert {
+  background: linear-gradient(90deg, var(--primary-light) 100%, var(--theme-black) 0%);
+}
+
+[data-theme="dark"] .skill-level-indicator.advanced {
+  background: linear-gradient(90deg, var(--primary-light) 75%, var(--theme-black) 75%);
+}
+
+[data-theme="dark"] .skill-level-indicator.working {
+  background: linear-gradient(90deg, var(--primary-light) 50%, var(--theme-black) 50%);
+}
+
+[data-theme="dark"] .skill-level-indicator.beginner {
+  background: linear-gradient(90deg, var(--primary-light) 25%, var(--theme-black) 25%);
+}
+
+[data-theme="dark"] .skill-item-with-text .skill-name {
+    font-size: 16px;
+    font-weight: 1000;
+    color: var(--theme-white);
 }
 
 .skill-item-with-text {
