@@ -125,7 +125,8 @@
     },
     "publications": {
         "pageTitle": "Publications",
-        "peerReviewed": "Peer-Reviewed Publications"
+        "peerReviewed": "Peer-Reviewed Publications",
+        "preprints": "Pre-Prints"
     },
     "skills": {
         "pageTitle": "Skills",

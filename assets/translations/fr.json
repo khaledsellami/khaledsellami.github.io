@@ -125,7 +125,8 @@
     },
     "publications": {
         "pageTitle": "Publications",
-        "peerReviewed": "Publications Évaluées par les Pairs"
+        "peerReviewed": "Publications Évaluées par les Pairs",
+        "preprints": "Prépublications"
     },
     "skills": {
         "pageTitle": "Compétences",
