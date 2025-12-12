@@ -92,6 +92,11 @@
         "pageTitle": "Projects",
         "affiliation": "Affiliation:",
         "references": "References:",
+        "monomorph": {
+            "dates": "(November 2025)",
+            "description1": "An LLM-based agentic tool that fully automates the refactoring of monolithic Java applications into microservice architectures. Built on research from",
+            "description2": " MonoMorph bridges the gap between decomposition planning and executable microservices by automatically analyzing codebases, determining optimal refactoring strategies, and generating gRPC-based communication infrastructure while ensuring consistency and correctness of the newly generated microservices."
+        },
         "microanalyzer": {
             "dates": "(June 2024)",
             "description": "A collection of static analysis tools in various programming languages (Java, C#, Python, JavaScript, Ruby, Go). As part of a larger research paper, this project implements a set of parsers that extract code snippets in microservices based applications for multiple programming languages."
